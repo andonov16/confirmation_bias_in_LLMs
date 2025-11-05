@@ -6,7 +6,7 @@ Rule,P,not P,Q,not Q
 "If a paper is wet, then it will tear easily.",Wet paper,Dry paper,Tears easily,Does not tear
 "If an object is transparent, then light passes through it.",Transparent,Opaque,Light passes,Light blocked
 "If a bird is a penguin, then it cannot fly.",Penguin,Sparrow,Cannot fly,Can fly
-"If water boils, then its temperature is 100°C.",Water boiling,Water not boiling,100°C,Below 100°C
+"If water boils, then its temperature is 100C.",Water boiling,Water not boiling,100C,Below 100C
 "If a metal is heated, then it expands.",Heated metal,Cold metal,Expands,Contracts
 "If an athlete trains daily, then performance improves.",Trains daily,Does not train,Performance improves,Performance declines
 "If a student studies, then they will pass the test.",Studies,Does not study,Passes test,Fails test

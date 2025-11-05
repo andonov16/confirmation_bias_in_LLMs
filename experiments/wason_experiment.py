@@ -74,15 +74,14 @@ def conduct_wason_study(api_config_path: str,
                 print(f'Skipping {bias_name} study for {model_name} (already exists).')
                 continue
 
-            print(f'Running {bias_name.capitalize()} study for {model_name}...')
+            print(f'\nRunning {bias_name.capitalize()} study for {model_name}...')
 
             try:
                 results_df = study_fn(
                     tested_llm_model=model_name,
                     model_client=model_client,
                     wason_tasks_df=wason_tasks_df,
-                    walson_config=wason_config,
-                    results_log_dir=results_dir
+                    walson_config=wason_config
                 )
 
                 # Ensure consistent save
@@ -92,7 +91,7 @@ def conduct_wason_study(api_config_path: str,
             except Exception as e:
                 print(f' Failed {bias_name} study for {model_name}: {e}')
 
-    print('All Wason studies completed!')
+    print('\nAll Wason studies completed!')
 
 
 # Example usage:
@@ -104,7 +103,7 @@ if __name__ == '__main__':
 
     conduct_wason_study(
         api_config_path='../config/api_config.yaml',
-        wason_config_path='../config/wason_selection_task.yaml',
+        wason_config_path='../config/wason_selection_tasks_config.yaml',
         results_dir='../logs/wason',
         wason_tasks_df=wason_tasks_df
     )

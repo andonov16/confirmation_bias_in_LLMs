@@ -10,7 +10,6 @@ def conduct_recency_bias_wason_selection_task_experiment(
     tested_llm_model: str,
     model_client: BaseModelClient,
     wason_tasks_df: pd.DataFrame,
-    results_log_dir: str,
     walson_config: dict,
 ) -> pd.DataFrame:
     random.seed(walson_config['experiment_seed'])
@@ -23,7 +22,9 @@ def conduct_recency_bias_wason_selection_task_experiment(
         'Q': [],
         'not Q': [],
         'Picked Items': [],
-        'Solved Correctly': []
+        'Solved Correctly': [],
+        'User Prompt': [],
+        'Raw LLM Output': []
     }
 
     for index, row in wason_tasks_df.iterrows():
@@ -36,7 +37,7 @@ def conduct_recency_bias_wason_selection_task_experiment(
 
         items_ordering = ['not P', 'Q', 'not Q', 'P']
 
-        solved_correctly, picked_items = conduct_wason_selection_task(
+        solved_correctly, picked_items, raw_llm_output, raw_user_prompt = conduct_wason_selection_task(
             model_client=model_client,
             rule=row['Rule'],
             items=items,
@@ -52,8 +53,8 @@ def conduct_recency_bias_wason_selection_task_experiment(
         results['not Q'].append(row['not Q'])
         results['Picked Items'].append(picked_items)
         results['Solved Correctly'].append(solved_correctly)
+        results['User Prompt'].append(raw_user_prompt)
+        results['Raw LLM Output'].append(raw_llm_output)
 
     results_df = pd.DataFrame(results)
-    results_df.to_csv(os.path.join(results_log_dir, f'{tested_llm_model}_recency_bias_wason_study_results.csv'), index=False)
-
     return results_df

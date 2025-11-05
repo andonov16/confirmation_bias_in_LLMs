@@ -22,7 +22,9 @@ def conduct_control_wason_selection_task_experiment(
         'Q': [],
         'not Q': [],
         'Picked Items': [],
-        'Solved Correctly': []
+        'Solved Correctly': [],
+        'User Prompt': [],
+        'Raw LLM Output': []
     }
 
     for index, row in wason_tasks_df.iterrows():
@@ -36,7 +38,7 @@ def conduct_control_wason_selection_task_experiment(
         items_ordering = list(items.keys())
         random.shuffle(items_ordering)
 
-        solved_correctly, picked_items = conduct_wason_selection_task(
+        solved_correctly, picked_items, raw_llm_output, raw_user_prompt = conduct_wason_selection_task(
             model_client=model_client,
             rule=row['Rule'],
             items=items,
@@ -53,6 +55,8 @@ def conduct_control_wason_selection_task_experiment(
         results['not Q'].append(row['not Q'])
         results['Picked Items'].append(picked_items)
         results['Solved Correctly'].append(solved_correctly)
+        results['User Prompt'].append(raw_user_prompt)
+        results['Raw LLM Output'].append(raw_llm_output)
 
     results_df = pd.DataFrame(results)
     return results_df

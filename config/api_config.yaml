@@ -1,18 +1,6 @@
 # api_config.yaml
 
 LLMs_to_test:
-  - api_key: "key_1"
-    base_url: "https://api.example1.com"
-    model_name: "gpt-5"
-
-  - api_key: "key_2"
-    base_url: "https://api.example2.com"
-    model_name: "claude-3-opus"
-
-  - api_key: "key_3"
-    base_url: "https://api.example3.com"
-    model_name: "gemini-1.5-pro"
-
-  - api_key: "key_3"
-    base_url: "https://api.example3.com"
-    model_name: "gemini-1.5-pro"
+  - api_key: ""
+    base_url: "https://api.openai.com/v1"
+    model_name: "gpt-5-nano"

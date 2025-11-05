@@ -24,15 +24,13 @@ class OpenAIClient(BaseModelClient):
         Sends the prompt to OpenAI's API and returns the generated response.
         """
         try:
-            response = self.client.chat.completions.create(
+            response = self.client.responses.create(
                 model=self.model_name,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt}
-                ],
-                temperature=temperature
+                instructions=system_prompt,
+                input=user_prompt,
+                reasoning={"effort": "minimal"},
             )
         except OpenAIError as e:
             raise RuntimeError(f"OpenAI API call failed: {e}")
 
-        return response.choices[0].message.content.strip()
+        return response.output[1].content[0].text.strip()
