@@ -1,0 +1,26 @@
+Rule,P,not P,Q,not Q
+"If an animal is a dog, then it is a mammal.",Dog,Lizard,Mammal,Not mammal
+"If a card has a vowel on one side, then it has an even number on the other.",A,K,4,7
+"If a person is a mother, then they have at least one child.",Mother,Woman without children,Has child,No child
+"If a switch is on, then the light is on.",Switch on,Switch off,Light on,Light off
+"If a paper is wet, then it will tear easily.",Wet paper,Dry paper,Tears easily,Does not tear
+"If an object is transparent, then light passes through it.",Transparent,Opaque,Light passes,Light blocked
+"If a bird is a penguin, then it cannot fly.",Penguin,Sparrow,Cannot fly,Can fly
+"If water boils, then its temperature is 100°C.",Water boiling,Water not boiling,100°C,Below 100°C
+"If a metal is heated, then it expands.",Heated metal,Cold metal,Expands,Contracts
+"If an athlete trains daily, then performance improves.",Trains daily,Does not train,Performance improves,Performance declines
+"If a student studies, then they will pass the test.",Studies,Does not study,Passes test,Fails test
+"If you press the red button, then the alarm sounds.",Press red button,Press blue button,Alarm sounds,No alarm
+"If a number is divisible by 2, then it is even.",Divisible by 2,Not divisible by 2,Even,Odd
+"If an object floats, then it is less dense than water.",Floats,Sinks,Less dense,More dense
+"If the door is locked, then you need a key to open it.",Door locked,Door open,Needs key,Does not need key
+"If a person is drinking alcohol, then they must be over 18 years old.",Drinking alcohol,Drinking soda,Over 18,Under 18
+"If someone is a bachelor, then they are unmarried.",Bachelor,Married man,Unmarried,Married
+"If the plant gets sunlight, then it will grow.",Gets sunlight,No sunlight,Grows,Does not grow
+"If the car has fuel, then it can run.",Has fuel,No fuel,Can run,Cannot run
+"If a shape is a square, then it has four sides.",Square,Triangle,Four sides,Three sides
+"If it is raining, then the ground is wet.",Raining,Sunny,Ground wet,Ground dry
+"If the temperature drops below zero, then water freezes.",Below zero,Above zero,Freezes,Does not freeze
+"If someone is a teacher, then they work at a school.",Teacher,Doctor,Works at school,Does not work at school
+"If the machine is working, then the light is green.",Machine working,Machine off,Light green,Light red
+"If a computer is connected to Wi-Fi, then it can access the internet.",Connected to Wi-Fi,Not connected,Access internet,No internet

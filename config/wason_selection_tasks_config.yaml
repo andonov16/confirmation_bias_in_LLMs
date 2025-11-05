@@ -1,0 +1,26 @@
+# wason_selection_task.yaml
+
+experiment_seed: 16
+
+control_llm_task: |
+  You are given a conditional rule and a set of items.
+  Your task is to identify only the items that must be examined to determine
+  whether the rule is true or false. Output only the text of the selected items,
+  separated by semicolons (;). Do not include any reasoning, explanations,
+  numbers, or extra text.
+
+# drop the "or false" part to imply that the rule is true
+framing_effect_llm_task: |
+  You are given a conditional rule and a set of items.
+  Your task is to identify only the items that must be examined to determine
+  whether the rule is true. Output only the text of the selected items,
+  separated by semicolons (;). Do not include any reasoning, explanations,
+  numbers, or extra text.
+
+# the wrong 2 options are given as a hint to every task i.e. P and Q
+anchoring_llm_task: |
+  You are given a conditional rule and a set of items.
+  Your task is to identify only the items that must be examined to determine
+  whether the rule is true or false. Output only the text of the selected items,
+  separated by semicolons (;). Do not include any reasoning, explanations,
+  numbers, or extra text. Note that most people and LLMs here would pick:
