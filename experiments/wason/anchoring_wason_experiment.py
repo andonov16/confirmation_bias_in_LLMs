@@ -40,12 +40,14 @@ def conduct_anchoring_wason_selection_task_experiment(
         items_ordering = list(items.keys())
         random.shuffle(items_ordering)
 
+        p, q = items['P'], items['Q']
+        
         solved_correctly, picked_items, raw_llm_output, raw_user_prompt = conduct_wason_selection_task(
             model_client=model_client,
             rule=row['Rule'],
             items=items,
             items_ordering=items_ordering,
-            llm_task=f'{llm_task} "{items['P']}" and "{items['Q']}".'
+            llm_task=f'{llm_task} "{p}" and "{q}"'
         )
 
         results['Intentional Bias'].append('Anchoring')

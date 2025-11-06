@@ -2,9 +2,11 @@ import os
 import yaml
 import pandas as pd
 from tqdm import tqdm
+from pathlib import Path
 from src.model_clients.open_ai_client import OpenAIClient
 from src.model_clients.base_model_client import BaseModelClient
 from src.wason_selection import conduct_wason_selection_task
+from src.model_clients.ollama_ai_client import OllamaAIClient
 
 # Import your experiment variants
 from experiments.wason.control_wason_experiment import conduct_control_wason_selection_task_experiment
@@ -47,16 +49,27 @@ def conduct_wason_study(api_config_path: str,
         api_key = model_info['api_key']
         base_url = model_info['base_url']
         model_name = model_info['model_name']
+        model_type = model_info["model_type"]
 
         print('='*100)
         print(f'\n Running Wason studies for model: {model_name}')
-
-        # Create model client
-        model_client = OpenAIClient(
-            api_key=api_key,
-            base_url=base_url,
-            model_name=model_name
-        )
+        
+        model_client = None
+        
+        if model_type == 'local':
+            # Create model client
+            model_client = OllamaAIClient(
+                api_key=api_key,
+                base_url=base_url,
+                model_name=model_name
+            )
+        else:
+            # Create model client
+            model_client = OpenAIClient(
+                api_key=api_key,
+                base_url=base_url,
+                model_name=model_name
+            )
 
         # --- Define studies ---
         studies = [
@@ -68,7 +81,8 @@ def conduct_wason_study(api_config_path: str,
 
         # --- Run all 4 studies ---
         for bias_name, study_fn in studies:
-            result_path = os.path.join(results_dir, f'{model_name}_{bias_name}_wason_study_results.csv')
+            result_path = os.path.join(results_dir, f'{model_name.replace(":", "_")}_{bias_name}_wason_study_results.csv') # Can't have ':' in filenames
+            print(result_path)
 
             if os.path.exists(result_path):
                 print(f'Skipping {bias_name} study for {model_name} (already exists).')
@@ -98,12 +112,11 @@ def conduct_wason_study(api_config_path: str,
 if __name__ == '__main__':
     import pandas as pd
 
-    # Example Wason task set
-    wason_tasks_df = pd.read_csv('../data/wason_selection_tasks.csv')
+    root_path = Path(__file__).resolve().parent.parent # Project root
 
     conduct_wason_study(
-        api_config_path='../config/api_config.yaml',
-        wason_config_path='../config/wason_selection_tasks_config.yaml',
-        results_dir='../logs/wason',
-        wason_tasks_df=wason_tasks_df
+        api_config_path= str(root_path / 'config/api_config.yaml'),
+        wason_config_path= str(root_path / 'config/wason_selection_tasks_config.yaml'),
+        results_dir= str(root_path / 'logs/wason'),
+        wason_tasks_df=pd.read_csv(str(root_path / 'data/wason_selection_tasks.csv'))
     )
