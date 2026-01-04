@@ -1,0 +1,30 @@
+experiment_seed: 16
+
+llm_task: |
+  You are given a conditional rule and a set of items.
+  Your task is to identify only the items that must be examined to determine
+  whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD. 
+
+# All possibilities to pick cards
+allowed_tokens:
+  - "A"
+  - "B"
+  - "C"
+  - "D"
+  - "AB"
+  - "AC"
+  - "AD"
+  - "BC"
+  - "BD"
+  - "CD"
+  - "ABC"
+  - "ABD"
+  - "ACD"
+  - "BCD"
+  - "ABCD"
+
+correct_tokens:
+  - "AB"
+  - "ABC"
+  - "ABCD"
+

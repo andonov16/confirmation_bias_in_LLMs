@@ -1,6 +1,9 @@
 from openai import OpenAI, OpenAIError
+from typing import List, Dict
+import numpy as np
 
 from src.model_clients.base_model_client import BaseModelClient
+from src.tokenization import _get_logit_bias
 
 
 class OpenAIClient(BaseModelClient):
@@ -16,21 +19,50 @@ class OpenAIClient(BaseModelClient):
 
         self.client = OpenAI(api_key=api_key, base_url=self.base_url)
 
-    def send_prompt_get_response(self,
-                                 system_prompt: str,
-                                 user_prompt: str,
-                                 temperature: float=0) -> str:
-        """
-        Sends the prompt to OpenAI's API and returns the generated response.
-        """
+
+    def send_prompt_get_response(
+            self,
+            system_prompt: str,
+            user_prompt: str,
+            allowed_tokens: List[str],
+            temperature: float = 0.0,
+    ) -> Dict[str, float]:
+        raise NotImplemented()
+
+        logit_bias = _get_logit_bias(model_name=self.model_name, allowed_tokens=allowed_tokens)
+
         try:
             response = self.client.responses.create(
                 model=self.model_name,
-                instructions=system_prompt,
                 input=user_prompt,
-                reasoning={"effort": "minimal"},
+                instructions=system_prompt,
+                include=["message.output_text.logprobs"],  # request token probabilities
+                temperature=0,
+                logit_bias=logit_bias
             )
+
+            # Access logprobs
+            logprobs = response.output[0].content[0].logprobs.top_logprobs
         except OpenAIError as e:
             raise RuntimeError(f"OpenAI API call failed: {e}")
 
-        return response.output[1].content[0].text.strip()
+        # check that the response has logprobs
+        try:
+            token_info = response.output[0].content[0]
+            top_logprobs = token_info.logprobs.top_logprobs
+        except (AttributeError, IndexError):
+            raise RuntimeError("Model response does not contain logprobs. Make sure your model supports logprobs.")
+
+        # filter allowed tokens
+        logprob_dict = {td.token: td.logprob for td in top_logprobs if td.token in allowed_tokens}
+
+        if not logprob_dict:
+            raise RuntimeError("No allowed tokens found in model logprobs.")
+
+        # normalize probabilities
+        tokens = list(logprob_dict.keys())
+        logprobs = np.array([logprob_dict[t] for t in tokens])
+        exp_probs = np.exp(logprobs - np.max(logprobs))
+        probs = exp_probs / np.sum(exp_probs)
+
+        return {t: float(p) for t, p in zip(tokens, probs)}

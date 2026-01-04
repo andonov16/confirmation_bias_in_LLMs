@@ -116,7 +116,7 @@ if __name__ == '__main__':
 
     conduct_wason_study(
         api_config_path= str(root_path / 'config/api_config.yaml'),
-        wason_config_path= str(root_path / 'config/wason_selection_tasks_config.yaml'),
+        wason_config_path= str(root_path / 'config/wason_control_config.yaml'),
         results_dir= str(root_path / 'logs/wason'),
         wason_tasks_df=pd.read_csv(str(root_path / 'data/wason_selection_tasks.csv'))
     )
