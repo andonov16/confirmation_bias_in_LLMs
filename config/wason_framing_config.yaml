@@ -1,10 +1,18 @@
 experiment_seed: 16
+experiment_type: "framing"
+console_log_message: 'Conducting Framing Wason Selection Task Study'
 
 # drop the "or false" part to imply that the rule is true
 llm_task: |
   You are given a conditional rule and a set of items.
   Your task is to identify only the items that must be examined to determine
   whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD. 
+
+cards_ordering:
+  - "P"
+  - "not Q"
+  - "not P"
+  - "Q"
 
 # All possibilities to pick cards
 allowed_tokens:

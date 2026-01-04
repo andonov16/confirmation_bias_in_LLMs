@@ -1,9 +1,17 @@
 experiment_seed: 16
+experiment_type: "position"
+console_log_message: 'Conducting Position Wason Selection Task Study'
 
 llm_task: |
   You are given a conditional rule and a set of items.
   Your task is to identify only the items that must be examined to determine
   whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD. 
+
+cards_ordering:
+  - "not P"
+  - "Q"
+  - "P"
+  - "not Q"
 
 # All possibilities to pick cards
 allowed_tokens:

@@ -1,11 +1,20 @@
 experiment_seed: 16
+experiment_type: "anchoring"
+console_log_message: 'Conducting Anchoring Wason Selection Task Study'
 
   # the wrong 2 options are given as a hint to every task i.e. P and Q
 llm_task: |
   You are given a conditional rule and a set of items.
   Your task is to identify only the items that must be examined to determine
   whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD. 
-  Note that most people and LLMs here would pick option AB.
+  Note that most people and LLMs here would pick option AD.
+
+
+cards_ordering:
+  - "P"
+  - "not Q"
+  - "not P"
+  - "Q"
 
 # All possibilities to pick cards
 allowed_tokens:
