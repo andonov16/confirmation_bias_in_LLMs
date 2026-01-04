@@ -24,3 +24,78 @@ Task ID,Rule,P,not P,Q,not Q
 22,"If someone is a teacher, then they work at a school.",Teacher,Doctor,Works at school,Does not work at school
 23,"If the machine is working, then the light is green.",Machine working,Machine off,Light green,Light red
 24,"If a computer is connected to Wi-Fi, then it can access the internet.",Connected to Wi-Fi,Not connected,Access internet,No internet
+25,"If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels
+26,"If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol
+27,"If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study
+28,"If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds
+29,"If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services
+30,"If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on
+31,"If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older
+32,"If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical
+33,"If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk
+34,"If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro
+35,"If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels
+36,"If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol
+37,"If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study
+38,"If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds
+39,"If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services
+40,"If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on
+41,"If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older
+42,"If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical
+43,"If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk
+44,"If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro
+45,"If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels
+46,"If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol
+47,"If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study
+48,"If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds
+49,"If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services
+50,"If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on
+51,"If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older
+52,"If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical
+53,"If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk
+54,"If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro
+55,"If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels
+56,"If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol
+57,"If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study
+58,"If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds
+59,"If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services
+60,"If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on
+61,"If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older
+62,"If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical
+63,"If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk
+64,"If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro
+65,"If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels
+66,"If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol
+67,"If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study
+68,"If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds
+69,"If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services
+70,"If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on
+71,"If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older
+72,"If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical
+73,"If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk
+74,"If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro
+75,"If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels
+76,"If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol
+77,"If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study
+78,"If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds
+79,"If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services
+80,"If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on
+81,"If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older
+82,"If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical
+83,"If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk
+84,"If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro
+85,"If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels
+86,"If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol
+87,"If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study
+88,"If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds
+89,"If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services
+90,"If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on
+91,"If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older
+92,"If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical
+93,"If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk
+94,"If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro
+95,"If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels
+96,"If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol
+97,"If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study
+98,"If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds
+99,"If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services
