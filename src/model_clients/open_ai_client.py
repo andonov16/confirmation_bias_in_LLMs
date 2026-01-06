@@ -27,8 +27,6 @@ class OpenAIClient(BaseModelClient):
             allowed_tokens: List[str],
             temperature: float = 0.0,
     ) -> Dict[str, float]:
-        raise NotImplemented()
-
         logit_bias = _get_logit_bias(model_name=self.model_name, allowed_tokens=allowed_tokens)
 
         try:
