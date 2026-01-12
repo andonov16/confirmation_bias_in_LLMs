@@ -79,20 +79,20 @@ def conduct_wason_study(api_config_path: str,
 
             # print(f'\nRunning {bias_name.capitalize()} study for {model_name}...')
 
-            try:
-                results_df = conduct_wason_selection_task_experiment(
-                    tested_llm_model=model_name,
-                    model_client=model_client,
-                    wason_tasks_df=wason_tasks_df,
-                    wason_experiment_config=experiment_config_dict
-                )
+#            try:
+            results_df = conduct_wason_selection_task_experiment(
+                tested_llm_model=model_name,
+                model_client=model_client,
+                wason_tasks_df=wason_tasks_df,
+                wason_experiment_config=experiment_config_dict
+            )
 
-                # Ensure consistent save
-                results_df.to_csv(result_path, index=False)
-                print(f'Saved results to {result_path}')
+            # Ensure consistent save
+            results_df.to_csv(result_path, index=False)
+            print(f'Saved results to {result_path}')
 
-            except Exception as e:
-                print(f' Failed {experiment_name} study for {model_name}: {e}')
+#            except Exception as e:
+#                print(f' Failed {experiment_name} study for {model_name}: {e}')
 
     print('\nAll Wason studies completed!')
 
