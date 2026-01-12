@@ -27,7 +27,7 @@ class OpenAIClient(BaseModelClient):
             allowed_tokens: List[str],
             temperature: float = 0.0,
     ) -> Dict[str, float]:
-        logit_bias = _get_logit_bias(model_name=self.model_name, allowed_tokens=allowed_tokens)
+        #logit_bias = _get_logit_bias(model_name=self.model_name, allowed_tokens=allowed_tokens)
 
         try:
             response = self.client.responses.create(
@@ -35,12 +35,13 @@ class OpenAIClient(BaseModelClient):
                 input=user_prompt,
                 instructions=system_prompt,
                 include=["message.output_text.logprobs"],  # request token probabilities
-                temperature=0,
-                logit_bias=logit_bias
+                temperature=temperature,
+                max_output_tokens= 16,
+                reasoning={
+                    "effort": "none"
+                }
             )
 
-            # Access logprobs
-            logprobs = response.output[0].content[0].logprobs.top_logprobs
         except OpenAIError as e:
             raise RuntimeError(f"OpenAI API call failed: {e}")
 

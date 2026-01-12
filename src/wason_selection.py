@@ -45,7 +45,7 @@ def conduct_wason_selection_task(
     # Get model response
     baseline_response_probs = model_client.send_prompt_get_response(
         system_prompt=llm_task,
-        user_prompt='',
+        user_prompt=' ',
         allowed_tokens=allowed_tokens
     )
 

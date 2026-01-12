@@ -2,14 +2,10 @@
 
 LLMs_to_test:
   - api_key: ""
-    base_url: "https://api.openai.com/v1"
-    model_name: "gpt-4.1-nano"
-  - api_key: ""
-    base_url: "100.77.29.89:11434"
+    base_url: "localhost:11434"
     model_name: "gemma3_12b"
+    model_type: "local"
   - api_key: ""
-    base_url: "100.77.29.89:11434"
+    base_url: "localhost:11434"
     model_name: "gpt_oss_20b"
-  - api_key: ""
-    base_url: "100.77.29.89:11434"
-    model_name: "temp"
+    model_type: "local"

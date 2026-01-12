@@ -38,7 +38,7 @@ def conduct_wason_study(api_config_path: str,
     wason_config_dicts: Dict[str, dict] = {}
     for experiment_name, wason_config_path in wason_config_paths.items():
         with open(wason_config_path, 'r') as f:
-            wason_config_dicts.append(yaml.safe_load(f))
+            wason_config_dicts[experiment_name] = yaml.safe_load(f)
 
     # Ensure results directory exists
     os.makedirs(results_dir, exist_ok=True)
@@ -68,7 +68,7 @@ def conduct_wason_study(api_config_path: str,
             )
 
         # Run all 4 studies
-        for experiment_name, experiment_config_dict in wason_config_dicts:
+        for experiment_name, experiment_config_dict in wason_config_dicts.items():
             result_path = os.path.join(results_dir,
                                        f'{model_name.replace(":", "_")}_{experiment_name}_wason_study_results.csv')  # Can't have ':' in filenames
             # print(result_path)
