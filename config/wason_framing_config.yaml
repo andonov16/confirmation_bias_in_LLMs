@@ -6,7 +6,9 @@ console_log_message: 'Conducting Framing Wason Selection Task Study'
 llm_task: |
   You are given a conditional rule and a set of items.
   Your task is to identify only the items that must be examined to determine
-  whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD. 
+  whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+  please consider all of them when giving me your response.
+  Please, when returning tokens, limit yourself to only the options I defined you above.
 
 cards_ordering:
   - "P"

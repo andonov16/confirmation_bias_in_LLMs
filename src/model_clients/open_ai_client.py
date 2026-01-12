@@ -3,7 +3,6 @@ from typing import List, Dict
 import numpy as np
 
 from src.model_clients.base_model_client import BaseModelClient
-from src.tokenization import _get_logit_bias
 
 
 class OpenAIClient(BaseModelClient):
@@ -32,14 +31,11 @@ class OpenAIClient(BaseModelClient):
         try:
             response = self.client.responses.create(
                 model=self.model_name,
-                input=user_prompt,
-                instructions=system_prompt,
+                input=str.join(system_prompt, user_prompt),
+                # instructions=system_prompt,
                 include=["message.output_text.logprobs"],  # request token probabilities
                 temperature=temperature,
-                max_output_tokens= 16,
-                reasoning={
-                    "effort": "none"
-                }
+                max_output_tokens= 160,
             )
 
         except OpenAIError as e:
@@ -47,13 +43,14 @@ class OpenAIClient(BaseModelClient):
 
         # check that the response has logprobs
         try:
-            token_info = response.output[0].content[0]
-            top_logprobs = token_info.logprobs.top_logprobs
+            logprobs_list = response.output[0].content[0].logprobs
+            top_logprobs = {lp.token: lp.logprob for lp in logprobs_list}
+            print(top_logprobs)
         except (AttributeError, IndexError):
             raise RuntimeError("Model response does not contain logprobs. Make sure your model supports logprobs.")
 
         # filter allowed tokens
-        logprob_dict = {td.token: td.logprob for td in top_logprobs if td.token in allowed_tokens}
+        logprob_dict = {td_key: td_value for td_key, td_value in top_logprobs.items() if td_key in allowed_tokens}
 
         if not logprob_dict:
             raise RuntimeError("No allowed tokens found in model logprobs.")
