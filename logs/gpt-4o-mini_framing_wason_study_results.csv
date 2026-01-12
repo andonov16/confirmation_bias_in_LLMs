@@ -1,0 +1,601 @@
+Task ID,Experiment Type,LLM Task,Rule,P,not P,Q,not Q,Cards Ordering,A DCPMI,B DCPMI,C DCPMI,D DCPMI,AB DCPMI,AC DCPMI,AD DCPMI,BC DCPMI,BD DCPMI,CD DCPMI,ABC DCPMI,ABD DCPMI,ACD DCPMI,BCD DCPMI,ABCD DCPMI
+0,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If an animal is a dog, then it is a mammal.",Dog,Lizard,Mammal,Not mammal,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+1,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a card has a vowel on one side, then it has an even number on the other.",A,K,4,7,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+2,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a person is a mother, then they have at least one child.",Mother,Woman without children,Has child,No child,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+3,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a switch is on, then the light is on.",Switch on,Switch off,Light on,Light off,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+4,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a paper is wet, then it will tear easily.",Wet paper,Dry paper,Tears easily,Does not tear,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+5,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If an object is transparent, then light passes through it.",Transparent,Opaque,Light passes,Light blocked,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+6,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a bird is a penguin, then it cannot fly.",Penguin,Sparrow,Cannot fly,Can fly,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+7,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If water boils, then its temperature is 100C.",Water boiling,Water not boiling,100C,Below 100C,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+8,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a metal is heated, then it expands.",Heated metal,Cold metal,Expands,Contracts,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+9,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If an athlete trains daily, then performance improves.",Trains daily,Does not train,Performance improves,Performance declines,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+10,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a student studies, then they will pass the test.",Studies,Does not study,Passes test,Fails test,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+11,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If you press the red button, then the alarm sounds.",Press red button,Press blue button,Alarm sounds,No alarm,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+12,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a number is divisible by 2, then it is even.",Divisible by 2,Not divisible by 2,Even,Odd,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+13,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If an object floats, then it is less dense than water.",Floats,Sinks,Less dense,More dense,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+14,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If the door is locked, then you need a key to open it.",Door locked,Door open,Needs key,Does not need key,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+15,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a person is drinking alcohol, then they must be over 18 years old.",Drinking alcohol,Drinking soda,Over 18,Under 18,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+16,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If someone is a bachelor, then they are unmarried.",Bachelor,Married man,Unmarried,Married,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+17,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If the plant gets sunlight, then it will grow.",Gets sunlight,No sunlight,Grows,Does not grow,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+18,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If the car has fuel, then it can run.",Has fuel,No fuel,Can run,Cannot run,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+19,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a shape is a square, then it has four sides.",Square,Triangle,Four sides,Three sides,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+20,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If it is raining, then the ground is wet.",Raining,Sunny,Ground wet,Ground dry,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+21,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If the temperature drops below zero, then water freezes.",Below zero,Above zero,Freezes,Does not freeze,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+22,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If someone is a teacher, then they work at a school.",Teacher,Doctor,Works at school,Does not work at school,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+23,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If the machine is working, then the light is green.",Machine working,Machine off,Light green,Light red,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+24,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a computer is connected to Wi-Fi, then it can access the internet.",Connected to Wi-Fi,Not connected,Access internet,No internet,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+25,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+26,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+27,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+28,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+29,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+30,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+31,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+32,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+33,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+34,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+35,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+36,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+37,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+38,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+39,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+40,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+41,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+42,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+43,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+44,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+45,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+46,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+47,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+48,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+49,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+50,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+51,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+52,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+53,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+54,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+55,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+56,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+57,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+58,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+59,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+60,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+61,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+62,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+63,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+64,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+65,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+66,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+67,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+68,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+69,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+70,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+71,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+72,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+73,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+74,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+75,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+76,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+77,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+78,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+79,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+80,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+81,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+82,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+83,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+84,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+85,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+86,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+87,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+88,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+89,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+90,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+91,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+92,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+93,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+94,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+95,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+96,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+97,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+98,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+99,framing,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
+please consider all of them when giving me your response.
+Please, when returning tokens, limit yourself to only the options I defined you above.
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN

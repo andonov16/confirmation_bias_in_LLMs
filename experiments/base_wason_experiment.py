@@ -70,7 +70,8 @@ def conduct_wason_selection_task_experiment(
         except RuntimeError:
             for allowed_token in wason_experiment_config['allowed_tokens']:
                 results[f'{allowed_token} DCPMI'].append('NaN')
-        break
+
+        print(results)
 
 
     results_df = pd.DataFrame(results)
