@@ -26,20 +26,21 @@ class OllamaAIClient(BaseModelClient):
 
         args = {
             "model": self.model_name,
-            "prompt": f"{system_prompt} \n\n {user_prompt}",
+            "system": system_prompt,
+            "prompt": user_prompt,
             "logprobs": True,
-            "top_logprobs": len(allowed_tokens),
+            "top_logprobs": 20,
             "options": {
                 "temperature": 0,
-                "num_predict": 1
+                "num_predict": 16
             }
         }
         try:
-            response = r.post(url, data=args)
+            response = r.post(url, json=args)
 
         except Exception as e:
             raise RuntimeError(f"API call failed: {e}")
-        print(response.status_code)
+        print(response.text)
         # check that the response has logprobs
         try:
             token_info = response.output[0].content[0]
