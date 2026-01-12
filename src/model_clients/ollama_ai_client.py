@@ -1,6 +1,7 @@
 from typing import Dict
 import numpy as np
 import requests as r
+import json
 
 from src.model_clients.base_model_client import BaseModelClient
 
@@ -30,9 +31,10 @@ class OllamaAIClient(BaseModelClient):
             "prompt": user_prompt,
             "logprobs": True,
             "top_logprobs": 20,
+            "stream:": False,
             "options": {
                 "temperature": 0,
-                "num_predict": 16
+                "num_predict": 5
             }
         }
         try:
@@ -41,15 +43,15 @@ class OllamaAIClient(BaseModelClient):
         except Exception as e:
             raise RuntimeError(f"API call failed: {e}")
         print(response.text)
-        # check that the response has logprobs
         try:
-            token_info = response.output[0].content[0]
-            top_logprobs = token_info.logprobs
+            logprobs_list = response.json().get(logprobs)
+            top_logprobs = {lp.token: lp.logprob for lp in logprobs_list}
+            print(top_logprobs)
         except (AttributeError, IndexError):
             raise RuntimeError("Model response does not contain logprobs. Make sure your model supports logprobs.")
 
         # filter allowed tokens
-        logprob_dict = {td.token: td.logprob for td in top_logprobs if td.token in allowed_tokens}
+        logprob_dict = {td_key: td_value for td_key, td_value in top_logprobs.items() if td_key in allowed_tokens}
 
         if not logprob_dict:
             raise RuntimeError("No allowed tokens found in model logprobs.")

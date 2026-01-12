@@ -35,6 +35,7 @@ class OpenAIClient(BaseModelClient):
                 # instructions=system_prompt,
                 include=["message.output_text.logprobs"],  # request token probabilities
                 temperature=temperature,
+                top_logprobs=20,
                 max_output_tokens= 160,
             )
 
@@ -44,13 +45,13 @@ class OpenAIClient(BaseModelClient):
         # check that the response has logprobs
         try:
             logprobs_list = response.output[0].content[0].logprobs
-            top_logprobs = {lp.token: lp.logprob for lp in logprobs_list}
+            top_logprobs = {lp.token.strip(): lp.logprob for lp in logprobs_list}
             print(top_logprobs)
         except (AttributeError, IndexError):
             raise RuntimeError("Model response does not contain logprobs. Make sure your model supports logprobs.")
 
         # filter allowed tokens
-        logprob_dict = {td_key: td_value for td_key, td_value in top_logprobs.items() if td_key in allowed_tokens}
+        logprob_dict = {td_key.strip(): td_value for td_key, td_value in top_logprobs.items() if td_key.strip() in allowed_tokens}
 
         if not logprob_dict:
             raise RuntimeError("No allowed tokens found in model logprobs.")
