@@ -55,18 +55,21 @@ def conduct_wason_selection_task_experiment(
         }
 
         # conducting the wason experiment using the LLM`s API
-        llm_probs_result_dict = conduct_wason_selection_task(
-            model_client=model_client,
-            rule=row['Rule'],
-            items=items,
-            items_ordering=wason_experiment_config['cards_ordering'],
-            llm_task=llm_task,
-            allowed_tokens=wason_experiment_config['allowed_tokens'],
-        )
+        try:
+            llm_probs_result_dict = conduct_wason_selection_task(
+                model_client=model_client,
+                rule=row['Rule'],
+                items=items,
+                items_ordering=wason_experiment_config['cards_ordering'],
+                llm_task=llm_task,
+                allowed_tokens=wason_experiment_config['allowed_tokens'],
+            )
 
-        for allowed_token, dcpmi_val in llm_probs_result_dict.items():
-            results[f'{allowed_token} DCPMI'].append(dcpmi_val)
-
+            for allowed_token, dcpmi_val in llm_probs_result_dict.items():
+                results[f'{allowed_token} DCPMI'].append(dcpmi_val)
+        except RuntimeError:
+            for allowed_token in wason_experiment_config['allowed_tokens']:
+                results[f'{allowed_token} DCPMI'].append('NaN')
         break
 
 

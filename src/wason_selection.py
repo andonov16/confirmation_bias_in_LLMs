@@ -1,5 +1,6 @@
 from src.model_clients.base_model_client import BaseModelClient
 from typing import Dict,List
+import numpy as np
 
 
 def conduct_wason_selection_task(
@@ -58,9 +59,9 @@ def conduct_wason_selection_task(
     dcpmi_tokens_dict = {}
     for token in allowed_tokens:
         if token in rule_introduced_response_probs.keys() and token in baseline_response_probs.keys():
-            dcpmi_tokens_dict[token] = rule_introduced_response_probs[token]/baseline_response_probs[token]
+            dcpmi_tokens_dict[token] = np.log(rule_introduced_response_probs[token]/baseline_response_probs[token])
         elif token in rule_introduced_response_probs.keys():
-            dcpmi_tokens_dict[token] = rule_introduced_response_probs[token]/1e-6
+            dcpmi_tokens_dict[token] = np.log(rule_introduced_response_probs[token]/1e-6)
         else:
             dcpmi_tokens_dict[token] = float('-inf')
 
