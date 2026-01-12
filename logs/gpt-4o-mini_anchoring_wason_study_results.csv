@@ -1,0 +1,8 @@
+Task ID,Experiment Type,LLM Task,Rule,P,not P,Q,not Q,Cards Ordering,A DCPMI,B DCPMI,C DCPMI,D DCPMI,AB DCPMI,AC DCPMI,AD DCPMI,BC DCPMI,BD DCPMI,CD DCPMI,ABC DCPMI,ABD DCPMI,ACD DCPMI,BCD DCPMI,ABCD DCPMI
+0,anchoring,"You are given a conditional rule and a set of items.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
+BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
+please consider all of them when giving me your response.
+Note that most people and LLMs here would pick option AD.
+","If an animal is a dog, then it is a mammal.",Dog,Lizard,Mammal,Not mammal,"['P', 'not Q', 'not P', 'Q']",0.1623971608945304,0.1486331137177729,77688.50900568654,77680.58518188985,77688.50900568654,77685.24615682861,68043.850469723,77567.95238764459,77688.50900568654,77688.50900568654,77688.43131721638,77688.50900568654,-inf,77688.50900568654,-inf

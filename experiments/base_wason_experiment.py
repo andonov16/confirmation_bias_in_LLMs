@@ -67,6 +67,8 @@ def conduct_wason_selection_task_experiment(
         for allowed_token, dcpmi_val in llm_probs_result_dict.items():
             results[f'{allowed_token} DCPMI'].append(dcpmi_val)
 
+        break
+
 
     results_df = pd.DataFrame(results)
     return results_df
