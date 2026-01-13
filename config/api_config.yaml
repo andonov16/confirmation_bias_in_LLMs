@@ -1,11 +1,7 @@
 # api_config.yaml
 
 LLMs_to_test:
-  - api_key: ""
-    base_url: "localhost:11434"
-    model_name: "gemma3_12b"
-    model_type: "local"
-  - api_key: ""
-    base_url: "localhost:11434"
-    model_name: "gpt_oss_20b"
-    model_type: "local"
+  - api_key:  ""
+    base_url:  "https://api.openai.com/v1"
+    model_name: "gpt-4o-mini"
+    model_type: "cloud"

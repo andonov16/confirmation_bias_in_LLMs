@@ -3,6 +3,7 @@ from typing import List, Dict
 import numpy as np
 
 from src.model_clients.base_model_client import BaseModelClient
+from src.utils.tokens import get_logprobs_dict
 
 
 class OpenAIClient(BaseModelClient):
@@ -31,7 +32,7 @@ class OpenAIClient(BaseModelClient):
         try:
             response = self.client.responses.create(
                 model=self.model_name,
-                input=str.join(system_prompt, user_prompt),
+                input= system_prompt + "\n\n" + user_prompt,
                 # instructions=system_prompt,
                 include=["message.output_text.logprobs"],  # request token probabilities
                 temperature=temperature,
@@ -45,7 +46,7 @@ class OpenAIClient(BaseModelClient):
         # check that the response has logprobs
         try:
             logprobs_list = response.output[0].content[0].logprobs
-            top_logprobs = {lp.token.strip(): lp.logprob for lp in logprobs_list}
+            top_logprobs = get_logprobs_dict(logprobs_list)
            # print(top_logprobs)
         except (AttributeError, IndexError):
             raise RuntimeError("Model response does not contain logprobs. Make sure your model supports logprobs.")
