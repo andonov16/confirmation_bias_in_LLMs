@@ -34,7 +34,7 @@ class OllamaAIClient(BaseModelClient):
             "stream:": False,
             "options": {
                 "temperature": 0,
-                "num_predict": 5
+                "num_predict": 160
             }
         }
         try:
@@ -42,16 +42,22 @@ class OllamaAIClient(BaseModelClient):
 
         except Exception as e:
             raise RuntimeError(f"API call failed: {e}")
-        print(response.text)
         try:
-            logprobs_list = response.json().get(logprobs)
-            top_logprobs = {lp.token: lp.logprob for lp in logprobs_list}
-            print(top_logprobs)
+            logprobs_list = []
+            for line in response.iter_lines(decode_unicode=True):
+                if not line:
+                    continue
+                obj = json.loads(line)
+                if "logprobs" in obj:
+                    logprobs_list.extend(obj["logprobs"])
+
+            top_logprobs = {lp["token"].strip(): lp["logprob"] for lp in logprobs_list}
         except (AttributeError, IndexError):
+
             raise RuntimeError("Model response does not contain logprobs. Make sure your model supports logprobs.")
 
         # filter allowed tokens
-        logprob_dict = {td_key: td_value for td_key, td_value in top_logprobs.items() if td_key in allowed_tokens}
+        logprob_dict = {td_key.strip(): td_value for td_key, td_value in top_logprobs.items() if td_key.strip() in allowed_tokens}
 
         if not logprob_dict:
             raise RuntimeError("No allowed tokens found in model logprobs.")
