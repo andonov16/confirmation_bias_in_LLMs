@@ -10,6 +10,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\logs\gpt-4o-mini_position_wason_study_results.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\logs\gpt-oss_20b_control_wason_study_results.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
