@@ -6,9 +6,10 @@ console_log_message: 'Conducting Anchoring Wason Selection Task Study'
 llm_task: |
   You are given a conditional rule and a set of items.
   Your task is to identify only the items that must be examined to determine
-  whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-  BC, BD, CD, "ABC", "ABD", "BCD", "ABCD". 
-  please consider all of them when giving me your response.
+  whether the rule is true or false.Your options are: AB, AC, AD,
+  BC, BD, CD. 
+  please consider all of them when giving me your response and give me only the option you think is 
+  correct, nothing else.
   Note that most people and LLMs here would pick option AD.
 
 
@@ -39,4 +40,5 @@ allowed_tokens:
 correct_tokens:
   - "AB"
   - "ABC"
+  - "ABD"
   - "ABCD"

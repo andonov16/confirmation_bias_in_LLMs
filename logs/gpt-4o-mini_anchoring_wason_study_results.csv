@@ -1,701 +1,801 @@
 Task ID,Experiment Type,LLM Task,Rule,P,not P,Q,not Q,Cards Ordering,A DCPMI,B DCPMI,C DCPMI,D DCPMI,AB DCPMI,AC DCPMI,AD DCPMI,BC DCPMI,BD DCPMI,CD DCPMI,ABC DCPMI,ABD DCPMI,ACD DCPMI,BCD DCPMI,ABCD DCPMI
 0,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If an animal is a dog, then it is a mammal.",Dog,Lizard,Mammal,Not mammal,"['P', 'not Q', 'not P', 'Q']",3.6170156637495823,1.8108466637495824,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If an animal is a dog, then it is a mammal.",Dog,Lizard,Mammal,Not mammal,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 1,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a card has a vowel on one side, then it has an even number on the other.",A,K,4,7,"['P', 'not Q', 'not P', 'Q']",-0.6805064764942789,-0.06577847649427913,-inf,-0.33036947649427906,11.575498364970642,12.320009364970643,-0.790042476494279,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a card has a vowel on one side, then it has an even number on the other.",A,K,4,7,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 2,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a person is a mother, then they have at least one child.",Mother,Woman without children,Has child,No child,"['P', 'not Q', 'not P', 'Q']",1.3510634042970722,1.398832404297072,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a person is a mother, then they have at least one child.",Mother,Woman without children,Has child,No child,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 3,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a switch is on, then the light is on.",Switch on,Switch off,Light on,Light off,"['P', 'not Q', 'not P', 'Q']",-1.0890580456779282,-inf,-inf,-0.18206204567792802,-inf,-inf,12.934647527997045,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a switch is on, then the light is on.",Switch on,Switch off,Light on,Light off,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 4,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a paper is wet, then it will tear easily.",Wet paper,Dry paper,Tears easily,Does not tear,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,2.476604434814512,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a paper is wet, then it will tear easily.",Wet paper,Dry paper,Tears easily,Does not tear,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 5,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If an object is transparent, then light passes through it.",Transparent,Opaque,Light passes,Light blocked,"['P', 'not Q', 'not P', 'Q']",-0.054405552741295715,1.0477414472587046,1.0458844472587043,-inf,-inf,-inf,0.24121344725870453,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If an object is transparent, then light passes through it.",Transparent,Opaque,Light passes,Light blocked,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 6,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a bird is a penguin, then it cannot fly.",Penguin,Sparrow,Cannot fly,Can fly,"['P', 'not Q', 'not P', 'Q']",1.846106289064224,1.8968672890642237,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a bird is a penguin, then it cannot fly.",Penguin,Sparrow,Cannot fly,Can fly,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 7,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If water boils, then its temperature is 100C.",Water boiling,Water not boiling,100C,Below 100C,"['P', 'not Q', 'not P', 'Q']",-1.604960259980645,-0.44796525998064524,-0.4423992599806453,-0.442441259980645,-0.346222259980645,-0.44242525998064514,-0.44247025998064504,-0.4432682599806453,11.305513477478401,11.305513477478401,11.3055124774784,11.305513477478401,-inf,11.3055124774784,-inf
+","If water boils, then its temperature is 100C.",Water boiling,Water not boiling,100C,Below 100C,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 8,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a metal is heated, then it expands.",Heated metal,Cold metal,Expands,Contracts,"['P', 'not Q', 'not P', 'Q']",-1.6548751493802623,-2.0367401493802624,11.259389262323893,11.259357262323892,11.259389262323893,11.259356262323893,11.142121262323892,11.258193262323893,11.259389262323893,11.259389262323893,11.259388262323892,11.259389262323893,-inf,11.259388262323892,-inf
+","If a metal is heated, then it expands.",Heated metal,Cold metal,Expands,Contracts,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 9,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If an athlete trains daily, then performance improves.",Trains daily,Does not train,Performance improves,Performance declines,"['P', 'not Q', 'not P', 'Q']",0.5603985207964134,-inf,-inf,1.1576595207964135,-inf,-inf,1.0884725207964132,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If an athlete trains daily, then performance improves.",Trains daily,Does not train,Performance improves,Performance declines,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 10,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a student studies, then they will pass the test.",Studies,Does not study,Passes test,Fails test,"['P', 'not Q', 'not P', 'Q']",0.5773035420554721,-inf,-inf,0.9349575420554721,-inf,-inf,1.2771635420554721,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a student studies, then they will pass the test.",Studies,Does not study,Passes test,Fails test,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 11,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If you press the red button, then the alarm sounds.",Press red button,Press blue button,Alarm sounds,No alarm,"['P', 'not Q', 'not P', 'Q']",0.7163731278515065,-inf,-inf,1.1072051278515067,-inf,-inf,1.5789181278515063,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If you press the red button, then the alarm sounds.",Press red button,Press blue button,Alarm sounds,No alarm,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 12,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a number is divisible by 2, then it is even.",Divisible by 2,Not divisible by 2,Even,Odd,"['P', 'not Q', 'not P', 'Q']",-0.49908808621045014,-0.49592308621044995,-0.49592308621044995,-0.49591708621044966,-0.40583408621044986,-0.49604708621044996,-0.49602408621044997,-0.4992410862104498,11.251234559066855,11.251235559066854,11.251235559066854,11.251235559066854,-inf,11.251234559066855,-inf
+","If a number is divisible by 2, then it is even.",Divisible by 2,Not divisible by 2,Even,Odd,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 13,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If an object floats, then it is less dense than water.",Floats,Sinks,Less dense,More dense,"['P', 'not Q', 'not P', 'Q']",-1.6757942500585314,-0.3215812500585313,-0.31903225005853125,-0.3190602500585312,-0.2229102500585312,-0.3190672500585313,-0.31910925005853114,-0.31965425005853115,-0.3190332500585312,11.309735418675734,11.309734418675735,11.309735418675734,-inf,11.309735418675734,-inf
+","If an object floats, then it is less dense than water.",Floats,Sinks,Less dense,More dense,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 14,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If the door is locked, then you need a key to open it.",Door locked,Door open,Needs key,Does not need key,"['P', 'not Q', 'not P', 'Q']",-0.43106151553849814,0.3290194844615018,12.761927722773368,-inf,-inf,-inf,-0.2935925155384982,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If the door is locked, then you need a key to open it.",Door locked,Door open,Needs key,Does not need key,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 15,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a person is drinking alcohol, then they must be over 18 years old.",Drinking alcohol,Drinking soda,Over 18,Under 18,"['P', 'not Q', 'not P', 'Q']",1.3434231507667338,1.4046731507667338,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a person is drinking alcohol, then they must be over 18 years old.",Drinking alcohol,Drinking soda,Over 18,Under 18,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 16,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If someone is a bachelor, then they are unmarried.",Bachelor,Married man,Unmarried,Married,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,12.170723208774804,13.210408208774805,0.10886725628767388,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If someone is a bachelor, then they are unmarried.",Bachelor,Married man,Unmarried,Married,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 17,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If the plant gets sunlight, then it will grow.",Gets sunlight,No sunlight,Grows,Does not grow,"['P', 'not Q', 'not P', 'Q']",-2.868145877202713,11.307551357422973,11.307551357422973,-1.9930028772027126,11.307551357422973,11.307540357422974,11.307489357422973,11.306736357422974,11.307551357422973,11.307551357422973,11.307551357422973,11.307551357422973,-inf,11.307551357422973,-inf
+","If the plant gets sunlight, then it will grow.",Gets sunlight,No sunlight,Grows,Does not grow,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 18,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If the car has fuel, then it can run.",Has fuel,No fuel,Can run,Cannot run,"['P', 'not Q', 'not P', 'Q']",0.8901799254735934,0.6973369254735935,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If the car has fuel, then it can run.",Has fuel,No fuel,Can run,Cannot run,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 19,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a shape is a square, then it has four sides.",Square,Triangle,Four sides,Three sides,"['P', 'not Q', 'not P', 'Q']",0.5303262954560438,1.757672295456044,-inf,1.729178295456044,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a shape is a square, then it has four sides.",Square,Triangle,Four sides,Three sides,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 20,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If it is raining, then the ground is wet.",Raining,Sunny,Ground wet,Ground dry,"['P', 'not Q', 'not P', 'Q']",0.6549550879560928,1.113180087956093,-inf,-inf,-inf,-inf,1.084856087956093,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If it is raining, then the ground is wet.",Raining,Sunny,Ground wet,Ground dry,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 21,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If the temperature drops below zero, then water freezes.",Below zero,Above zero,Freezes,Does not freeze,"['P', 'not Q', 'not P', 'Q']",-1.0306613539311775,0.05209164606882255,0.05209164606882255,0.052058646068822274,0.05209164606882255,0.05204064606882255,0.0548066460688223,0.05074964606882251,0.05209064606882245,0.05209164606882255,0.05209064606882245,0.05209164606882255,-inf,0.05209064606882245,-inf
+","If the temperature drops below zero, then water freezes.",Below zero,Above zero,Freezes,Does not freeze,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 22,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If someone is a teacher, then they work at a school.",Teacher,Doctor,Works at school,Does not work at school,"['P', 'not Q', 'not P', 'Q']",0.296879341325282,-0.05413565867471813,-inf,-1.319152658674718,-inf,-inf,12.602240375562666,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If someone is a teacher, then they work at a school.",Teacher,Doctor,Works at school,Does not work at school,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 23,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If the machine is working, then the light is green.",Machine working,Machine off,Light green,Light red,"['P', 'not Q', 'not P', 'Q']",1.3550720084648722,1.3995630084648722,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If the machine is working, then the light is green.",Machine working,Machine off,Light green,Light red,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 24,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a computer is connected to Wi-Fi, then it can access the internet.",Connected to Wi-Fi,Not connected,Access internet,No internet,"['P', 'not Q', 'not P', 'Q']",0.07403788582273535,-inf,-inf,0.3332868858227353,-inf,-inf,12.958658064765118,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a computer is connected to Wi-Fi, then it can access the internet.",Connected to Wi-Fi,Not connected,Access internet,No internet,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 25,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",-0.36908716532243957,-0.3680821653224397,-0.3680821653224397,-0.36812116532243966,-0.2924251653224397,-0.3681261653224397,-0.47295916532243976,-0.3690701653224396,-0.36808316532243973,11.258584118077538,11.258583118077539,11.258584118077538,-inf,11.258584118077538,-inf
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 26,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",-2.7142903186752685,11.299590557123256,11.303655557123257,-1.9869573186752685,11.303655557123257,11.303607557123255,11.303521557123256,11.302154557123256,11.303654557123256,11.303655557123257,11.303654557123256,11.303655557123257,-inf,11.303655557123257,-inf
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 27,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",-0.27152974414674547,-0.27231874414674545,-0.27231874414674545,-0.2723637441467455,-0.16924974414674526,-0.2723407441467455,-0.27236474414674544,-0.2727817441467455,-0.27231874414674545,-0.27231874414674545,11.250852289492933,11.250853289492934,-inf,11.250853289492934,-inf
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 28,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",-1.1664030728378312,-0.4863840728378312,12.763593320696938,-inf,-inf,-inf,12.023212320696938,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 29,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",1.4196297196601206,1.3312267196601204,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 30,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",0.12593042117086373,1.2420274211708637,1.2398104211708636,-inf,-inf,-inf,0.6256444211708638,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 31,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",1.3532437781003417,1.3980247781003419,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 32,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",0.10016868286870029,-0.052584317131299636,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 33,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,2.4915808186140183,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 34,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,2.070571080369226,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 35,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",-0.2516516647210226,-0.4360986647210226,11.250864309034142,-1.7336096647210226,11.250864309034142,11.250827309034143,-1.5054886647210226,11.249796309034144,11.250864309034142,11.250864309034142,11.250863309034143,11.250864309034142,-inf,11.250864309034142,-inf
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 36,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",-0.05696989438437274,1.025747105615627,1.0242771056156275,-inf,-inf,-inf,0.33825610561562713,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 37,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",0.4760567547883574,-inf,-inf,1.2315497547883574,-inf,-inf,1.3577207547883574,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 38,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 39,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",-0.7292099902553634,-inf,-inf,12.942274895156032,-inf,-inf,12.864441895156032,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 40,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",-2.8508027496514083,-1.9867257496514081,11.307191118151135,11.307166118151136,11.307191118151135,11.307143118151135,11.307108118151135,11.305682118151134,11.307190118151135,11.307191118151135,11.307191118151135,11.307191118151135,-inf,11.307190118151135,-inf
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 41,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",1.3466184554751266,1.4020334554751266,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 42,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,12.572498772502374,13.070001772502376,12.375786772502375,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 43,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
 ","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 44,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",0.011046651797552322,-inf,-inf,0.36771765179755234,-inf,-inf,12.869126570489032,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 45,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 46,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,2.188431414563849,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 47,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",-0.9581356790242325,-0.9611696790242326,-0.9611706790242324,-0.9612236790242324,-0.9360146790242324,11.25081058073789,11.250710580737888,11.248962580737889,11.250878580737888,11.25087958073789,11.25087958073789,11.25087958073789,-inf,11.25087958073789,-inf
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 48,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",1.005302938414355,1.647051938414355,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 49,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",1.8023734644397054,-0.06520753556029435,-0.06520753556029435,0.03500946443970566,-0.06520753556029435,-0.0652865355602944,-0.1972475355602943,-0.06788953556029441,-0.06520853556029438,-0.06520753556029435,-0.06520853556029438,-0.06520753556029435,-inf,-0.06520853556029438,-inf
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 50,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",0.1269466715069122,1.154810671506912,1.1534806715069121,-inf,-inf,-inf,0.37053867150691233,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 51,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,0.4710415943954405,1.4376395943954405,0.8068405943954403,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 52,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",0.8262782822270537,1.727147282227054,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 53,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",1.3551141041570225,1.3975291041570228,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 54,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",-0.48645847468954345,-0.4866074746895437,-0.4866074746895437,-0.4866434746895435,-0.40126547468954366,-0.48663847468954347,-0.6141894746895435,-0.48708947468954344,11.260023277442553,11.260023277442553,11.260022277442552,11.260023277442553,-inf,11.260022277442552,-inf
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 55,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",-0.48878630288114194,-0.48803130288114194,-0.48803130288114194,-0.48804930288114184,-0.3919213028811418,-0.488052302881142,-0.6118463028811421,-0.4888653028811418,11.259888777012927,11.259888777012927,11.259887777012926,11.259888777012927,-inf,11.259888777012927,-inf
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 56,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",-0.115432531616893,12.095740036870493,12.732142036870494,-0.9071895316168932,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 57,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",-1.8912233638157352,-1.853213363815735,11.250824111692506,11.250780111692505,11.250824111692506,11.250786111692506,11.250707111692504,11.249293111692506,11.250823111692505,11.250824111692506,11.250824111692506,11.250824111692506,-inf,11.250823111692505,-inf
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 58,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",-0.43561780199033706,-0.43656180199033695,-0.43656180199033695,-0.4365718019903372,-0.36942580199033703,-0.4365638019903369,-1.7231288019903372,-0.4364228019903369,11.307946139560382,11.307946139560382,11.307946139560382,11.307946139560382,-inf,11.307946139560382,-inf
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 59,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",0.6925176594757311,0.6011846594757311,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 60,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 61,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 62,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",-0.48971644103108725,-0.48895244103108726,-0.48895244103108726,-0.488992441031087,-0.39283644103108717,-0.4890014410310872,-0.5986674410310873,-0.49017244103108704,11.258919439936967,11.258920439936967,11.258919439936967,11.258920439936967,-inf,11.258919439936967,-inf
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 63,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",1.4732525318117236,1.5189365318117232,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 64,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 65,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",-2.216961933867746,11.285372185565384,11.205970185565384,-1.5977419338677463,11.295154185565384,11.295117185565383,-0.9657879338677461,11.293480185565384,11.295154185565384,11.295154185565384,11.295153185565383,11.295154185565384,-inf,11.295154185565384,-inf
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 66,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",1.1085336111889101,1.7725956111889098,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 67,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",1.4235238061988615,2.1626878061988615,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 68,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",-0.5824782440689755,-inf,-inf,13.033953117454951,-inf,-inf,12.643164117454951,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 69,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",1.1061408825710466,1.5895378825710467,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 70,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,1.3855300229595635,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 71,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",-1.0356094642572518,11.620974901490056,11.620974901490056,-1.8189484642572518,11.600109901490057,11.620945901490057,11.620929901490058,11.619712901490058,11.620974901490056,-inf,-inf,-inf,-inf,-inf,-inf
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 72,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",0.3804357102513938,-inf,-inf,1.0703127102513939,-inf,-inf,1.2664437102513937,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 73,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",-0.7643522635292916,11.259004658445301,11.259004658445301,-2.3747112635292913,11.259004658445301,11.2589786584453,11.146937658445301,11.257824658445301,11.259004658445301,11.259004658445301,11.259004658445301,11.259004658445301,-inf,11.259004658445301,-inf
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 74,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,1.1336122111487459,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 75,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",-1.70229376682088,-0.44440076682088,-0.43866976682088,-0.43870376682087997,-0.3533187668208802,-0.43869776682088,-0.4387077668208801,-0.4395237668208801,11.307958900894329,11.307959900894328,11.307958900894329,11.307959900894328,-inf,11.307959900894328,-inf
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 76,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",1.4754087772532174,1.5169267772532173,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 77,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",0.2259195332563359,-inf,-inf,1.0356475332563357,-inf,-inf,1.055310533256336,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 78,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 79,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",0.9957744095297095,0.6726764095297091,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 80,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",-0.49621503291038754,-0.49578703291038745,-0.49578703291038745,-0.49582103291038726,-0.4103820329103874,-0.4958110329103875,-0.49585203291038726,-0.49691803291038716,11.25088193191575,11.250882931915749,11.25088193191575,11.250882931915749,-inf,11.250882931915749,-inf
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 81,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",-0.49512137341255896,-0.4954313734125591,-0.4954313734125591,-0.495441373412559,-0.414248373412559,-0.495438373412559,-0.49545337341255896,-0.495768373412559,11.250775233822331,11.250775233822331,11.250775233822331,11.250775233822331,-inf,11.250775233822331,-inf
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 82,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",-1.2038972742456817,-0.11995627424568166,-1.0690602742456816,-1.7114472742456817,11.25815311653242,11.258092116532419,11.159902116532418,11.255985116532418,11.258152116532418,11.25815311653242,11.258152116532418,11.25815311653242,-inf,11.25815311653242,-inf
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 83,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,2.1849817955608697,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 84,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",-0.5362550099383657,-0.49268300993836556,-0.49268300993836556,-0.4926710099383652,-0.4074770099383656,-0.4926650099383657,-0.49267100993836555,-0.4918450099383656,11.25397331704568,11.253972317045681,11.253972317045681,11.25397331704568,-inf,11.253972317045681,-inf
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 85,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",1.375610070996765,1.379235070996765,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 86,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,12.586155826384994,13.060200826384994,0.01563138288851133,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 87,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",-1.0330210160107574,-1.310747016010757,11.261705332458886,-1.8474630160107572,11.261705332458886,11.261651332458886,11.110495332458886,11.260189332458886,11.261704332458887,11.261705332458886,11.261704332458887,11.261705332458886,-inf,11.261704332458887,-inf
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 88,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",1.5830281389136265,1.6248681389136261,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 89,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",-0.9050715556706829,-0.3554065556706828,0.0345414443293171,0.6042654443293168,-inf,-inf,11.70064468093147,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 90,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",1.3416264286148174,1.4074444286148176,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 91,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",-1.6450394348830262,-0.4439464348830262,-0.44078843488302605,-0.44081343488302627,-0.3507174348830262,-0.4408274348830261,-0.4408734348830263,-0.4422184348830261,11.306386162270728,11.306386162270728,11.306386162270728,11.306386162270728,-inf,11.306385162270727,-inf
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 92,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",-0.8893493204703377,-0.35106432047033764,-0.3426683204703376,-0.34270632047033767,-0.2627633204703375,-0.34275232047033743,-0.34276832047033745,-0.34431632047033756,-0.3426693204703376,11.284420810994526,11.284419810994526,11.284420810994526,-inf,11.284419810994526,-inf
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 93,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,0.5876818338003897,1.5502658338003894,0.9335118338003894,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 94,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,2.1878230002682306,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 95,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",-0.9273473365713664,-1.0585153365713664,-1.3349473365713664,-1.3326863365713666,11.250719058189713,11.250711058189713,11.250692058189713,11.249855058189715,11.250719058189713,11.250719058189713,11.250719058189713,11.250719058189713,-inf,11.250719058189713,-inf
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 96,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",0.24925304581352417,0.7989650458135243,0.7988730458135241,0.7873660458135243,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf
 97,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 98,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
 99,anchoring,"You are given a conditional rule and a set of items.
 Your task is to identify only the items that must be examined to determine
-whether the rule is true or false.Your options are: A, B, C, D, AB, AC, AD,
-BC, BD, CD, ""ABC"", ""ABD"", ""BCD"", ""ABCD"". 
-please consider all of them when giving me your response.
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+please consider all of them when giving me your response and give me only the option you think is 
+correct, nothing else.
 Note that most people and LLMs here would pick option AD.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",1.3449984608983823,1.4067184608983823,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",-inf,-inf,-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf
