@@ -1,601 +1,901 @@
 Task ID,Experiment Type,LLM Task,Rule,P,not P,Q,not Q,Cards Ordering,A DCPMI,B DCPMI,C DCPMI,D DCPMI,AB DCPMI,AC DCPMI,AD DCPMI,BC DCPMI,BD DCPMI,CD DCPMI,ABC DCPMI,ABD DCPMI,ACD DCPMI,BCD DCPMI,ABCD DCPMI
-0,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If an animal is a dog, then it is a mammal.",Dog,Lizard,Mammal,Not mammal,"['not P', 'Q', 'P', 'not Q']",1.3563937108150534,1.399659781695403,1.4045004848479843,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-1,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a card has a vowel on one side, then it has an even number on the other.",A,K,4,7,"['not P', 'Q', 'P', 'not Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
-2,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a person is a mother, then they have at least one child.",Mother,Woman without children,Has child,No child,"['not P', 'Q', 'P', 'not Q']",2.1290346828447637,1.2884199091153787,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-3,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a switch is on, then the light is on.",Switch on,Switch off,Light on,Light off,"['not P', 'Q', 'P', 'not Q']",1.0848196119266553,1.0989335788372552,1.1065190472589217,1.1059704384584217,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-4,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a paper is wet, then it will tear easily.",Wet paper,Dry paper,Tears easily,Does not tear,"['not P', 'Q', 'P', 'not Q']",1.0897468011241374,1.0987935634438504,1.1041202876073744,1.1036930755081273,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-5,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If an object is transparent, then light passes through it.",Transparent,Opaque,Light passes,Light blocked,"['not P', 'Q', 'P', 'not Q']",1.276646402582708,1.270485487288477,0.1781099047276146,1.2991249326850554,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-6,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a bird is a penguin, then it cannot fly.",Penguin,Sparrow,Cannot fly,Can fly,"['not P', 'Q', 'P', 'not Q']",1.068513150929589,1.1018699223376693,1.112908811421817,1.1123692743823161,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-7,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If water boils, then its temperature is 100C.",Water boiling,Water not boiling,100C,Below 100C,"['not P', 'Q', 'P', 'not Q']",1.3959465819383892,1.3516688259984873,1.4133403267800728,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-8,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a metal is heated, then it expands.",Heated metal,Cold metal,Expands,Contracts,"['not P', 'Q', 'P', 'not Q']",1.108963129590095,1.137679421731648,1.0062629045707334,1.137826070316792,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-9,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If an athlete trains daily, then performance improves.",Trains daily,Does not train,Performance improves,Performance declines,"['not P', 'Q', 'P', 'not Q']",-inf,1.481742410433041,0.8907706977331301,-0.0454339158764315,-inf,-inf,-inf,1.43438996296001,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-10,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a student studies, then they will pass the test.",Studies,Does not study,Passes test,Fails test,"['not P', 'Q', 'P', 'not Q']",-inf,1.1752879808622114,1.3594626316654546,1.5804308966197629,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-11,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If you press the red button, then the alarm sounds.",Press red button,Press blue button,Alarm sounds,No alarm,"['not P', 'Q', 'P', 'not Q']",1.1181533475391534,1.1294488507266651,1.0148707143598206,1.1294909109503424,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-12,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a number is divisible by 2, then it is even.",Divisible by 2,Not divisible by 2,Even,Odd,"['not P', 'Q', 'P', 'not Q']",1.3701081818017147,1.3924721877831592,1.3990049215444917,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-13,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If an object floats, then it is less dense than water.",Floats,Sinks,Less dense,More dense,"['not P', 'Q', 'P', 'not Q']",1.2294698395683659,1.272671624197357,0.36960656303318673,1.2727072951786902,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-14,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If the door is locked, then you need a key to open it.",Door locked,Door open,Needs key,Does not need key,"['not P', 'Q', 'P', 'not Q']",1.0997925469333842,1.1238310949146475,1.0466184936727934,1.1242213375490857,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-15,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a person is drinking alcohol, then they must be over 18 years old.",Drinking alcohol,Drinking soda,Over 18,Under 18,"['not P', 'Q', 'P', 'not Q']",0.8468228969966035,1.169287011470236,1.1711676119254877,1.1708908684674713,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-16,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If someone is a bachelor, then they are unmarried.",Bachelor,Married man,Unmarried,Married,"['not P', 'Q', 'P', 'not Q']",0.9408684208054517,1.1460871651352929,1.1469949293321742,1.1464399421234586,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-17,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If the plant gets sunlight, then it will grow.",Gets sunlight,No sunlight,Grows,Does not grow,"['not P', 'Q', 'P', 'not Q']",1.2202729474066152,1.2171496487229112,0.5265153026103371,1.266595752319349,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-18,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If the car has fuel, then it can run.",Has fuel,No fuel,Can run,Cannot run,"['not P', 'Q', 'P', 'not Q']",1.0831940928235408,1.101013364781474,1.106239966936991,1.1057636578544332,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-19,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a shape is a square, then it has four sides.",Square,Triangle,Four sides,Three sides,"['not P', 'Q', 'P', 'not Q']",1.0891575576848012,1.091302253479442,1.108168863251693,1.1076336417583845,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-20,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If it is raining, then the ground is wet.",Raining,Sunny,Ground wet,Ground dry,"['not P', 'Q', 'P', 'not Q']",1.0895946340843978,1.1010000166919611,1.1031601250175584,1.10260319692282,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-21,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If the temperature drops below zero, then water freezes.",Below zero,Above zero,Freezes,Does not freeze,"['not P', 'Q', 'P', 'not Q']",1.0691571096208143,1.1062350020290204,1.1104399179662006,1.109889905516834,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-22,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If someone is a teacher, then they work at a school.",Teacher,Doctor,Works at school,Does not work at school,"['not P', 'Q', 'P', 'not Q']",1.082729043757379,1.1041471030714802,1.104682120114401,1.104647854717396,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-23,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If the machine is working, then the light is green.",Machine working,Machine off,Light green,Light red,"['not P', 'Q', 'P', 'not Q']",-inf,0.15738848600079372,0.01563053021498762,0.16181906849942196,-0.5640011766593642,0.1545931050420068,0.10099844304903208,0.16109790198214158,0.12170563995340032,0.1618344945761081,0.15662596534155715,0.13185041416340496,-inf,-inf,-inf
-24,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a computer is connected to Wi-Fi, then it can access the internet.",Connected to Wi-Fi,Not connected,Access internet,No internet,"['not P', 'Q', 'P', 'not Q']",1.0809520601848082,1.1044528369874291,1.105594678863435,1.105157063084997,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-25,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",1.079189858613633,1.1016088964460111,1.107917822567858,1.1073761287564086,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-26,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",1.2476442863219925,0.301543805071169,1.2776551217933227,1.2772357213575913,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-27,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",1.0815656614532496,1.1035444640359298,1.1057926897293227,1.105270520228113,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-28,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",1.0779097546678298,1.1054531890865331,1.1066202715268942,1.1060793978729335,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-29,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",1.0910616165299365,1.1009461803978362,1.1024686379334931,1.1019067504489561,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-30,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",1.0677144148262474,1.1059544257457279,1.1107636433785109,1.1112213365696622,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-31,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",1.2534267228521407,0.2366062954255036,1.2867253772247702,1.286185022604827,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-32,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",1.1393436309498468,0.7788907178056742,1.2096949169371183,1.2091673418498288,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-33,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",1.0467295243550696,1.113950728941828,1.1170652755070853,1.11667906543718,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-34,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",1.0935554691028313,1.0447704453152722,1.1281667551307706,1.1276590016794683,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-35,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",1.079189858613633,1.1016088964460111,1.107917822567858,1.1073761287564086,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-36,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",1.2476442863219925,0.301543805071169,1.2776551217933227,1.2772357213575913,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-37,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",1.0815656614532496,1.1035444640359298,1.1057926897293227,1.105270520228113,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-38,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",1.0779097546678298,1.1054531890865331,1.1066202715268942,1.1060793978729335,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-39,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",1.0910616165299365,1.1009461803978362,1.1024686379334931,1.1019067504489561,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-40,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",1.0677144148262474,1.1059544257457279,1.1107636433785109,1.1112213365696622,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-41,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",1.2534267228521407,0.2366062954255036,1.2867253772247702,1.286185022604827,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-42,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",1.1393436309498468,0.7788907178056742,1.2096949169371183,1.2091673418498288,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-43,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",1.0467295243550696,1.113950728941828,1.1170652755070853,1.11667906543718,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-44,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",1.0935554691028313,1.0447704453152722,1.1281667551307706,1.1276590016794683,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-45,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",1.079189858613633,1.1016088964460111,1.107917822567858,1.1073761287564086,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-46,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",1.2476442863219925,0.301543805071169,1.2776551217933227,1.2772357213575913,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-47,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",1.0815656614532496,1.1035444640359298,1.1057926897293227,1.105270520228113,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-48,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",1.0779097546678298,1.1054531890865331,1.1066202715268942,1.1060793978729335,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-49,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",1.0910616165299365,1.1009461803978362,1.1024686379334931,1.1019067504489561,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-50,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",1.0677144148262474,1.1059544257457279,1.1107636433785109,1.1112213365696622,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-51,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",1.2534267228521407,0.2366062954255036,1.2867253772247702,1.286185022604827,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-52,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",1.1393436309498468,0.7788907178056742,1.2096949169371183,1.2091673418498288,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-53,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",1.0467295243550696,1.113950728941828,1.1170652755070853,1.11667906543718,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-54,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",1.0935554691028313,1.0447704453152722,1.1281667551307706,1.1276590016794683,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-55,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",1.079189858613633,1.1016088964460111,1.107917822567858,1.1073761287564086,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-56,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",1.2476442863219925,0.301543805071169,1.2776551217933227,1.2772357213575913,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-57,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",1.0815656614532496,1.1035444640359298,1.1057926897293227,1.105270520228113,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-58,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",1.0779097546678298,1.1054531890865331,1.1066202715268942,1.1060793978729335,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-59,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",1.0910616165299365,1.1009461803978362,1.1024686379334931,1.1019067504489561,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-60,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",1.0677144148262474,1.1059544257457279,1.1107636433785109,1.1112213365696622,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-61,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",1.2534267228521407,0.2366062954255036,1.2867253772247702,1.286185022604827,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-62,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",1.1393436309498468,0.7788907178056742,1.2096949169371183,1.2091673418498288,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-63,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",1.0467295243550696,1.113950728941828,1.1170652755070853,1.11667906543718,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-64,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",1.0935554691028313,1.0447704453152722,1.1281667551307706,1.1276590016794683,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-65,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",1.079189858613633,1.1016088964460111,1.107917822567858,1.1073761287564086,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-66,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",1.2476442863219925,0.301543805071169,1.2776551217933227,1.2772357213575913,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-67,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",1.0815656614532496,1.1035444640359298,1.1057926897293227,1.105270520228113,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-68,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",1.0779097546678298,1.1054531890865331,1.1066202715268942,1.1060793978729335,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-69,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",1.0910616165299365,1.1009461803978362,1.1024686379334931,1.1019067504489561,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-70,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",1.0677144148262474,1.1059544257457279,1.1107636433785109,1.1112213365696622,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-71,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",1.2534267228521407,0.2366062954255036,1.2867253772247702,1.286185022604827,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-72,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",1.1393436309498468,0.7788907178056742,1.2096949169371183,1.2091673418498288,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-73,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",1.0467295243550696,1.113950728941828,1.1170652755070853,1.11667906543718,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-74,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",1.0935554691028313,1.0447704453152722,1.1281667551307706,1.1276590016794683,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-75,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",1.079189858613633,1.1016088964460111,1.107917822567858,1.1073761287564086,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-76,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",1.2476442863219925,0.301543805071169,1.2776551217933227,1.2772357213575913,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-77,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",1.0815656614532496,1.1035444640359298,1.1057926897293227,1.105270520228113,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-78,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",1.0779097546678298,1.1054531890865331,1.1066202715268942,1.1060793978729335,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-79,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",1.0910616165299365,1.1009461803978362,1.1024686379334931,1.1019067504489561,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-80,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",1.0677144148262474,1.1059544257457279,1.1107636433785109,1.1112213365696622,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-81,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",1.2534267228521407,0.2366062954255036,1.2867253772247702,1.286185022604827,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-82,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",1.1393436309498468,0.7788907178056742,1.2096949169371183,1.2091673418498288,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-83,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",1.0467295243550696,1.113950728941828,1.1170652755070853,1.11667906543718,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-84,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",1.0935554691028313,1.0447704453152722,1.1281667551307706,1.1276590016794683,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-85,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",1.079189858613633,1.1016088964460111,1.107917822567858,1.1073761287564086,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-86,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",1.2476442863219925,0.301543805071169,1.2776551217933227,1.2772357213575913,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-87,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",1.0815656614532496,1.1035444640359298,1.1057926897293227,1.105270520228113,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-88,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",1.0779097546678298,1.1054531890865331,1.1066202715268942,1.1060793978729335,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-89,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",1.0910616165299365,1.1009461803978362,1.1024686379334931,1.1019067504489561,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-90,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",1.0677144148262474,1.1059544257457279,1.1107636433785109,1.1112213365696622,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-91,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",1.2534267228521407,0.2366062954255036,1.2867253772247702,1.286185022604827,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-92,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",1.1393436309498468,0.7788907178056742,1.2096949169371183,1.2091673418498288,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-93,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",1.0467295243550696,1.113950728941828,1.1170652755070853,1.11667906543718,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-94,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",1.0935554691028313,1.0447704453152722,1.1281667551307706,1.1276590016794683,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-95,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",1.079189858613633,1.1016088964460111,1.107917822567858,1.1073761287564086,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-96,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",1.2476442863219925,0.301543805071169,1.2776551217933227,1.2772357213575913,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-97,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",1.0815656614532496,1.1035444640359298,1.1057926897293227,1.105270520228113,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-98,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",1.0779097546678298,1.1054531890865331,1.1066202715268942,1.1060793978729335,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-99,position,"You are given a conditional rule and a set of items.
-Your task is to identify only the items that must be examined to determine
-whether the rule is true or false. Your options are: A, B, C, D, AB, AC, AD, BC, BD, CD, ABC, ABD, BCD, ABCD,
-please consider all of them when giving me your response.
-Please, when returning tokens, limit yourself to only the options I defined you above.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",1.0910616165299365,1.1009461803978362,1.1024686379334931,1.1019067504489561,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+0,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If an animal is a dog, then it is a mammal.",Dog,Lizard,Mammal,Not mammal,"['not P', 'Q', 'P', 'not Q']",0.895777335692809,0.9222833553746556,0.9233667165501164,0.9234752390872916,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+1,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a card has a vowel on one side, then it has an even number on the other.",A,K,4,7,"['not P', 'Q', 'P', 'not Q']",1.2364132756799142,1.2350265879354574,0.044188409985103275,0.7290662390806154,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+2,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a person is a mother, then they have at least one child.",Mother,Woman without children,Has child,No child,"['not P', 'Q', 'P', 'not Q']",0.9109637623389935,0.876949848407704,0.9378823027988539,0.9381334232704568,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+3,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a switch is on, then the light is on.",Switch on,Switch off,Light on,Light off,"['not P', 'Q', 'P', 'not Q']",-0.02421299234424039,0.002991831916580503,0.003104670641397975,0.0031508701168891607,-0.0009723594596319149,0.0031285513966412518,0.003128608478012746,0.0031476777419415757,0.0031294097941758523,0.0030739751863453316,-inf,-inf,-inf,-inf,-inf
+4,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a paper is wet, then it will tear easily.",Wet paper,Dry paper,Tears easily,Does not tear,"['not P', 'Q', 'P', 'not Q']",1.104059402616133,1.1279822700037017,-0.23096037120354784,1.1315600120865983,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+5,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If an object is transparent, then light passes through it.",Transparent,Opaque,Light passes,Light blocked,"['not P', 'Q', 'P', 'not Q']",0.11094969640162243,1.0842082886030546,1.0861222305949705,1.0861570733736026,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+6,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a bird is a penguin, then it cannot fly.",Penguin,Sparrow,Cannot fly,Can fly,"['not P', 'Q', 'P', 'not Q']",0.901982142124123,0.9205595820805257,0.9210389993806102,0.9214656096453634,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+7,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If water boils, then its temperature is 100C.",Water boiling,Water not boiling,100C,Below 100C,"['not P', 'Q', 'P', 'not Q']",0.9106434118346663,0.9170442986543998,0.918695906111861,0.9187761313369515,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+8,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a metal is heated, then it expands.",Heated metal,Cold metal,Expands,Contracts,"['not P', 'Q', 'P', 'not Q']",0.8037203797517295,0.9514012208255226,0.9514005230693732,0.9507097961763467,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+9,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If an athlete trains daily, then performance improves.",Trains daily,Does not train,Performance improves,Performance declines,"['not P', 'Q', 'P', 'not Q']",0.02629550841961404,0.05098175624154673,-0.5450409034674316,0.05159587577011041,0.023306185116914364,0.0515854647867106,0.05158611208932999,0.051605218374752196,0.05158761969179341,0.05157161315061993,-inf,-inf,-inf,-inf,-inf
+10,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a student studies, then they will pass the test.",Studies,Does not study,Passes test,Fails test,"['not P', 'Q', 'P', 'not Q']",-0.02173752113367418,0.003489502924707034,0.004454946969757502,0.004472046993554394,-0.013370019427385353,0.004454844277523933,0.00445664820433743,0.004474997153976196,0.004457075865814291,0.004448357071963976,-inf,-inf,-inf,-inf,-inf
+11,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If you press the red button, then the alarm sounds.",Press red button,Press blue button,Alarm sounds,No alarm,"['not P', 'Q', 'P', 'not Q']",-inf,1.280938793323008,1.2214581438747756,1.1012499563153195,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+12,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a number is divisible by 2, then it is even.",Divisible by 2,Not divisible by 2,Even,Odd,"['not P', 'Q', 'P', 'not Q']",0.8937125423180536,0.9189551564252956,0.9260635754520314,0.926098225292049,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+13,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If an object floats, then it is less dense than water.",Floats,Sinks,Less dense,More dense,"['not P', 'Q', 'P', 'not Q']",-0.017800189835353496,-0.0006375359718878697,0.00234589009213221,0.00237606319186271,0.001844380684732465,0.0023485083649839506,0.0023444293785685397,0.002366461968935125,0.0023508366383447393,0.0022826033473699555,-inf,-inf,-inf,-inf,-inf
+14,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If the door is locked, then you need a key to open it.",Door locked,Door open,Needs key,Does not need key,"['not P', 'Q', 'P', 'not Q']",0.9550622648363534,0.9376758414255413,0.7373411760309203,1.0140752711272647,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+15,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a person is drinking alcohol, then they must be over 18 years old.",Drinking alcohol,Drinking soda,Over 18,Under 18,"['not P', 'Q', 'P', 'not Q']",1.0059960339676048,1.0577622812946141,0.4078302955552283,1.058469435798329,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+16,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If someone is a bachelor, then they are unmarried.",Bachelor,Married man,Unmarried,Married,"['not P', 'Q', 'P', 'not Q']",0.9055405494938799,0.9216859844942197,0.915623599479263,0.9222417983499175,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+17,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If the plant gets sunlight, then it will grow.",Gets sunlight,No sunlight,Grows,Does not grow,"['not P', 'Q', 'P', 'not Q']",0.8991134763270455,0.921424571430237,0.9222051925854093,0.9222436672612562,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+18,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If the car has fuel, then it can run.",Has fuel,No fuel,Can run,Cannot run,"['not P', 'Q', 'P', 'not Q']",0.9503976900691092,1.0627530841803143,0.48603958100358047,1.06233811118119,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+19,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a shape is a square, then it has four sides.",Square,Triangle,Four sides,Three sides,"['not P', 'Q', 'P', 'not Q']",0.8872764393608288,0.9212729971907658,0.9274738244705926,0.9285909970034648,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+20,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If it is raining, then the ground is wet.",Raining,Sunny,Ground wet,Ground dry,"['not P', 'Q', 'P', 'not Q']",-0.014352872103373247,0.0015968838313116767,0.0017080359948383028,0.001721050873342925,0.00074307536475281,0.0016987528878688635,0.0016788532636261848,0.0017205359699659336,0.0017057622153232891,0.0016658254798901104,-inf,-inf,-inf,-inf,-inf
+21,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If the temperature drops below zero, then water freezes.",Below zero,Above zero,Freezes,Does not freeze,"['not P', 'Q', 'P', 'not Q']",1.0239008301255506,1.0668768565619002,0.3102123419911707,1.0804559056648868,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+22,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If someone is a teacher, then they work at a school.",Teacher,Doctor,Works at school,Does not work at school,"['not P', 'Q', 'P', 'not Q']",0.886879612712044,0.9258231782921422,0.9259310506956747,0.9259807898490571,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+23,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If the machine is working, then the light is green.",Machine working,Machine off,Light green,Light red,"['not P', 'Q', 'P', 'not Q']",-0.01907859971336363,0.0020669897165569388,0.0022725622885429427,0.0022983398037903385,0.0009345907846846913,0.0022620778454831084,0.0022537504808497473,0.0022832313078179093,0.002270624894120065,0.0022351116059308243,-inf,-inf,-inf,-inf,-inf
+24,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a computer is connected to Wi-Fi, then it can access the internet.",Connected to Wi-Fi,Not connected,Access internet,No internet,"['not P', 'Q', 'P', 'not Q']",0.24451502179511286,0.9897876377326645,1.1039739684001724,1.1040218496153533,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+25,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+26,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",-0.100312290028122,-0.03611803730053318,0.016365434604828373,0.016416755836352416,0.01525224037936048,0.0163806246271739,0.016347529528110215,0.016388937278967623,0.016385704087006507,0.01632175933615741,-inf,-inf,-inf,-inf,-inf
+27,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",0.8945497643812329,0.9230890571996694,0.9236083199637704,0.9236234082275785,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+28,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",-0.024929396422131617,0.006502488365007687,0.006532890799739232,0.006555174050667076,-0.028179037422952195,0.006526779473232997,0.00652694370251632,0.006547432677442763,0.006530176621598209,0.006514492862201193,-inf,-inf,-inf,-inf,-inf
+29,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",-0.1650030901880274,0.016913411658758516,0.016909303748586384,0.016696612712773524,0.016017695325710523,0.016905888339226675,0.016739997233907254,0.016885244982556287,0.016911313448441906,0.016858860022618646,-inf,-inf,-inf,-inf,-inf
+30,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",0.02801865072743141,0.04583622837870323,-0.5108641105509554,0.046369409150684326,0.039255131671693866,0.04635554737584545,0.04635577189581676,0.04637444635639475,0.04635649198337364,0.046311890288080144,-inf,-inf,-inf,-inf,-inf
+31,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",0.8872555145984441,0.9255452669638025,0.9259009545987105,0.9259271529879178,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+32,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",-0.24037228550414666,1.1220333496926045,1.1222186034824275,1.1219969421617617,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+33,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",0.9122928998144895,0.9038902495830295,0.9243235675693465,0.9245244523739169,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+34,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+35,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+36,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",-0.100312290028122,-0.03611803730053318,0.016365434604828373,0.016416755836352416,0.01525224037936048,0.0163806246271739,0.016347529528110215,0.016388937278967623,0.016385704087006507,0.01632175933615741,-inf,-inf,-inf,-inf,-inf
+37,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",0.8945497643812329,0.9230890571996694,0.9236083199637704,0.9236234082275785,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+38,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",-0.024929396422131617,0.006502488365007687,0.006532890799739232,0.006555174050667076,-0.028179037422952195,0.006526779473232997,0.00652694370251632,0.006547432677442763,0.006530176621598209,0.006514492862201193,-inf,-inf,-inf,-inf,-inf
+39,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",-0.1650030901880274,0.016913411658758516,0.016909303748586384,0.016696612712773524,0.016017695325710523,0.016905888339226675,0.016739997233907254,0.016885244982556287,0.016911313448441906,0.016858860022618646,-inf,-inf,-inf,-inf,-inf
+40,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",0.02801865072743141,0.04583622837870323,-0.5108641105509554,0.046369409150684326,0.039255131671693866,0.04635554737584545,0.04635577189581676,0.04637444635639475,0.04635649198337364,0.046311890288080144,-inf,-inf,-inf,-inf,-inf
+41,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",0.8872555145984441,0.9255452669638025,0.9259009545987105,0.9259271529879178,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+42,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",-0.24037228550414666,1.1220333496926045,1.1222186034824275,1.1219969421617617,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+43,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",0.9122928998144895,0.9038902495830295,0.9243235675693465,0.9245244523739169,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+44,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+45,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+46,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",-0.100312290028122,-0.03611803730053318,0.016365434604828373,0.016416755836352416,0.01525224037936048,0.0163806246271739,0.016347529528110215,0.016388937278967623,0.016385704087006507,0.01632175933615741,-inf,-inf,-inf,-inf,-inf
+47,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",0.8945497643812329,0.9230890571996694,0.9236083199637704,0.9236234082275785,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+48,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",-0.024929396422131617,0.006502488365007687,0.006532890799739232,0.006555174050667076,-0.028179037422952195,0.006526779473232997,0.00652694370251632,0.006547432677442763,0.006530176621598209,0.006514492862201193,-inf,-inf,-inf,-inf,-inf
+49,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",-0.1650030901880274,0.016913411658758516,0.016909303748586384,0.016696612712773524,0.016017695325710523,0.016905888339226675,0.016739997233907254,0.016885244982556287,0.016911313448441906,0.016858860022618646,-inf,-inf,-inf,-inf,-inf
+50,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",0.02801865072743141,0.04583622837870323,-0.5108641105509554,0.046369409150684326,0.039255131671693866,0.04635554737584545,0.04635577189581676,0.04637444635639475,0.04635649198337364,0.046311890288080144,-inf,-inf,-inf,-inf,-inf
+51,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",0.8872555145984441,0.9255452669638025,0.9259009545987105,0.9259271529879178,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+52,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",-0.24037228550414666,1.1220333496926045,1.1222186034824275,1.1219969421617617,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+53,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",0.9122928998144895,0.9038902495830295,0.9243235675693465,0.9245244523739169,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+54,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+55,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+56,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",-0.100312290028122,-0.03611803730053318,0.016365434604828373,0.016416755836352416,0.01525224037936048,0.0163806246271739,0.016347529528110215,0.016388937278967623,0.016385704087006507,0.01632175933615741,-inf,-inf,-inf,-inf,-inf
+57,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",0.8945497643812329,0.9230890571996694,0.9236083199637704,0.9236234082275785,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+58,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",-0.024929396422131617,0.006502488365007687,0.006532890799739232,0.006555174050667076,-0.028179037422952195,0.006526779473232997,0.00652694370251632,0.006547432677442763,0.006530176621598209,0.006514492862201193,-inf,-inf,-inf,-inf,-inf
+59,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",-0.1650030901880274,0.016913411658758516,0.016909303748586384,0.016696612712773524,0.016017695325710523,0.016905888339226675,0.016739997233907254,0.016885244982556287,0.016911313448441906,0.016858860022618646,-inf,-inf,-inf,-inf,-inf
+60,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",0.02801865072743141,0.04583622837870323,-0.5108641105509554,0.046369409150684326,0.039255131671693866,0.04635554737584545,0.04635577189581676,0.04637444635639475,0.04635649198337364,0.046311890288080144,-inf,-inf,-inf,-inf,-inf
+61,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",0.8872555145984441,0.9255452669638025,0.9259009545987105,0.9259271529879178,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+62,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",-0.24037228550414666,1.1220333496926045,1.1222186034824275,1.1219969421617617,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+63,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",0.9122928998144895,0.9038902495830295,0.9243235675693465,0.9245244523739169,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+64,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+65,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+66,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",-0.100312290028122,-0.03611803730053318,0.016365434604828373,0.016416755836352416,0.01525224037936048,0.0163806246271739,0.016347529528110215,0.016388937278967623,0.016385704087006507,0.01632175933615741,-inf,-inf,-inf,-inf,-inf
+67,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",0.8945497643812329,0.9230890571996694,0.9236083199637704,0.9236234082275785,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+68,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",-0.024929396422131617,0.006502488365007687,0.006532890799739232,0.006555174050667076,-0.028179037422952195,0.006526779473232997,0.00652694370251632,0.006547432677442763,0.006530176621598209,0.006514492862201193,-inf,-inf,-inf,-inf,-inf
+69,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",-0.1650030901880274,0.016913411658758516,0.016909303748586384,0.016696612712773524,0.016017695325710523,0.016905888339226675,0.016739997233907254,0.016885244982556287,0.016911313448441906,0.016858860022618646,-inf,-inf,-inf,-inf,-inf
+70,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",0.02801865072743141,0.04583622837870323,-0.5108641105509554,0.046369409150684326,0.039255131671693866,0.04635554737584545,0.04635577189581676,0.04637444635639475,0.04635649198337364,0.046311890288080144,-inf,-inf,-inf,-inf,-inf
+71,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",0.8872555145984441,0.9255452669638025,0.9259009545987105,0.9259271529879178,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+72,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",-0.24037228550414666,1.1220333496926045,1.1222186034824275,1.1219969421617617,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+73,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",0.9122928998144895,0.9038902495830295,0.9243235675693465,0.9245244523739169,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+74,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+75,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+76,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",-0.100312290028122,-0.03611803730053318,0.016365434604828373,0.016416755836352416,0.01525224037936048,0.0163806246271739,0.016347529528110215,0.016388937278967623,0.016385704087006507,0.01632175933615741,-inf,-inf,-inf,-inf,-inf
+77,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",0.8945497643812329,0.9230890571996694,0.9236083199637704,0.9236234082275785,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+78,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",-0.024929396422131617,0.006502488365007687,0.006532890799739232,0.006555174050667076,-0.028179037422952195,0.006526779473232997,0.00652694370251632,0.006547432677442763,0.006530176621598209,0.006514492862201193,-inf,-inf,-inf,-inf,-inf
+79,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",-0.1650030901880274,0.016913411658758516,0.016909303748586384,0.016696612712773524,0.016017695325710523,0.016905888339226675,0.016739997233907254,0.016885244982556287,0.016911313448441906,0.016858860022618646,-inf,-inf,-inf,-inf,-inf
+80,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",0.02801865072743141,0.04583622837870323,-0.5108641105509554,0.046369409150684326,0.039255131671693866,0.04635554737584545,0.04635577189581676,0.04637444635639475,0.04635649198337364,0.046311890288080144,-inf,-inf,-inf,-inf,-inf
+81,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",0.8872555145984441,0.9255452669638025,0.9259009545987105,0.9259271529879178,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+82,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",-0.24037228550414666,1.1220333496926045,1.1222186034824275,1.1219969421617617,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+83,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",0.9122928998144895,0.9038902495830295,0.9243235675693465,0.9245244523739169,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+84,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+85,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+86,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",-0.100312290028122,-0.03611803730053318,0.016365434604828373,0.016416755836352416,0.01525224037936048,0.0163806246271739,0.016347529528110215,0.016388937278967623,0.016385704087006507,0.01632175933615741,-inf,-inf,-inf,-inf,-inf
+87,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",0.8945497643812329,0.9230890571996694,0.9236083199637704,0.9236234082275785,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+88,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",-0.024929396422131617,0.006502488365007687,0.006532890799739232,0.006555174050667076,-0.028179037422952195,0.006526779473232997,0.00652694370251632,0.006547432677442763,0.006530176621598209,0.006514492862201193,-inf,-inf,-inf,-inf,-inf
+89,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",-0.1650030901880274,0.016913411658758516,0.016909303748586384,0.016696612712773524,0.016017695325710523,0.016905888339226675,0.016739997233907254,0.016885244982556287,0.016911313448441906,0.016858860022618646,-inf,-inf,-inf,-inf,-inf
+90,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",0.02801865072743141,0.04583622837870323,-0.5108641105509554,0.046369409150684326,0.039255131671693866,0.04635554737584545,0.04635577189581676,0.04637444635639475,0.04635649198337364,0.046311890288080144,-inf,-inf,-inf,-inf,-inf
+91,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",0.8872555145984441,0.9255452669638025,0.9259009545987105,0.9259271529879178,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+92,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",-0.24037228550414666,1.1220333496926045,1.1222186034824275,1.1219969421617617,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+93,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",0.9122928998144895,0.9038902495830295,0.9243235675693465,0.9245244523739169,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+94,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+95,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+96,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",-0.100312290028122,-0.03611803730053318,0.016365434604828373,0.016416755836352416,0.01525224037936048,0.0163806246271739,0.016347529528110215,0.016388937278967623,0.016385704087006507,0.01632175933615741,-inf,-inf,-inf,-inf,-inf
+97,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",0.8945497643812329,0.9230890571996694,0.9236083199637704,0.9236234082275785,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+98,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",-0.024929396422131617,0.006502488365007687,0.006532890799739232,0.006555174050667076,-0.028179037422952195,0.006526779473232997,0.00652694370251632,0.006547432677442763,0.006530176621598209,0.006514492862201193,-inf,-inf,-inf,-inf,-inf
+99,position,"You are shown a set of four cards placed on a table. 
+The visible faces of the cards show A, B, C, D, given below.
+Which card(s) must you turn over in order to test that if the rule, given below, is correct.
+Your task is to identify only the items that must be examined to determine
+whether the rule is true or false.Your options are: AB, AC, AD,
+BC, BD, CD. 
+Give me only the option(s) you think is 
+correct, nothing else.
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",-0.1650030901880274,0.016913411658758516,0.016909303748586384,0.016696612712773524,0.016017695325710523,0.016905888339226675,0.016739997233907254,0.016885244982556287,0.016911313448441906,0.016858860022618646,-inf,-inf,-inf,-inf,-inf

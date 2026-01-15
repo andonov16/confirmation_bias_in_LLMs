@@ -38,6 +38,9 @@ class OpenAIClient(BaseModelClient):
                 temperature=temperature,
                 top_logprobs=20,
                 max_output_tokens= 160,
+                reasoning={
+                    "effort": "none"
+                }
             )
 
         except OpenAIError as e:
@@ -47,7 +50,7 @@ class OpenAIClient(BaseModelClient):
         try:
             logprobs_list = response.output[0].content[0].logprobs
             top_logprobs = get_logprobs_dict(logprobs_list)
-           # print(top_logprobs)
+            print(top_logprobs)
         except (AttributeError, IndexError):
             raise RuntimeError("Model response does not contain logprobs. Make sure your model supports logprobs.")
 
