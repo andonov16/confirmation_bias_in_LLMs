@@ -1,5 +1,5 @@
 Task ID,Experiment Type,LLM Task,Rule,P,not P,Q,not Q,Cards Ordering,A DCPMI,B DCPMI,C DCPMI,D DCPMI,AB DCPMI,AC DCPMI,AD DCPMI,BC DCPMI,BD DCPMI,CD DCPMI,ABC DCPMI,ABD DCPMI,ACD DCPMI,BCD DCPMI,ABCD DCPMI
-0,position,"You are shown a set of four cards placed on a table. 
+0,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -7,8 +7,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If an animal is a dog, then it is a mammal.",Dog,Lizard,Mammal,Not mammal,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-1,position,"You are shown a set of four cards placed on a table. 
+","If an animal is a dog, then it is a mammal.",Dog,Lizard,Mammal,Not mammal,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+1,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -16,8 +16,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a card has a vowel on one side, then it has an even number on the other.",A,K,4,7,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-2,position,"You are shown a set of four cards placed on a table. 
+","If a card has a vowel on one side, then it has an even number on the other.",A,K,4,7,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+2,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -25,8 +25,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a person is a mother, then they have at least one child.",Mother,Woman without children,Has child,No child,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-3,position,"You are shown a set of four cards placed on a table. 
+","If a person is a mother, then they have at least one child.",Mother,Woman without children,Has child,No child,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+3,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -34,8 +34,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a switch is on, then the light is on.",Switch on,Switch off,Light on,Light off,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-4,position,"You are shown a set of four cards placed on a table. 
+","If a switch is on, then the light is on.",Switch on,Switch off,Light on,Light off,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+4,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -43,8 +43,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a paper is wet, then it will tear easily.",Wet paper,Dry paper,Tears easily,Does not tear,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-5,position,"You are shown a set of four cards placed on a table. 
+","If a paper is wet, then it will tear easily.",Wet paper,Dry paper,Tears easily,Does not tear,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+5,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -52,8 +52,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If an object is transparent, then light passes through it.",Transparent,Opaque,Light passes,Light blocked,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-6,position,"You are shown a set of four cards placed on a table. 
+","If an object is transparent, then light passes through it.",Transparent,Opaque,Light passes,Light blocked,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+6,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -61,8 +61,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a bird is a penguin, then it cannot fly.",Penguin,Sparrow,Cannot fly,Can fly,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-7,position,"You are shown a set of four cards placed on a table. 
+","If a bird is a penguin, then it cannot fly.",Penguin,Sparrow,Cannot fly,Can fly,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+7,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -70,8 +70,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If water boils, then its temperature is 100C.",Water boiling,Water not boiling,100C,Below 100C,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-8,position,"You are shown a set of four cards placed on a table. 
+","If water boils, then its temperature is 100C.",Water boiling,Water not boiling,100C,Below 100C,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+8,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -79,8 +79,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a metal is heated, then it expands.",Heated metal,Cold metal,Expands,Contracts,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-9,position,"You are shown a set of four cards placed on a table. 
+","If a metal is heated, then it expands.",Heated metal,Cold metal,Expands,Contracts,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+9,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -88,8 +88,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If an athlete trains daily, then performance improves.",Trains daily,Does not train,Performance improves,Performance declines,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-10,position,"You are shown a set of four cards placed on a table. 
+","If an athlete trains daily, then performance improves.",Trains daily,Does not train,Performance improves,Performance declines,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+10,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -97,8 +97,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a student studies, then they will pass the test.",Studies,Does not study,Passes test,Fails test,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,-inf,13.815510557964274,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-11,position,"You are shown a set of four cards placed on a table. 
+","If a student studies, then they will pass the test.",Studies,Does not study,Passes test,Fails test,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+11,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -106,8 +106,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If you press the red button, then the alarm sounds.",Press red button,Press blue button,Alarm sounds,No alarm,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-12,position,"You are shown a set of four cards placed on a table. 
+","If you press the red button, then the alarm sounds.",Press red button,Press blue button,Alarm sounds,No alarm,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+12,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -115,8 +115,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a number is divisible by 2, then it is even.",Divisible by 2,Not divisible by 2,Even,Odd,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-13,position,"You are shown a set of four cards placed on a table. 
+","If a number is divisible by 2, then it is even.",Divisible by 2,Not divisible by 2,Even,Odd,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+13,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -124,8 +124,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If an object floats, then it is less dense than water.",Floats,Sinks,Less dense,More dense,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-14,position,"You are shown a set of four cards placed on a table. 
+","If an object floats, then it is less dense than water.",Floats,Sinks,Less dense,More dense,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+14,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -133,8 +133,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If the door is locked, then you need a key to open it.",Door locked,Door open,Needs key,Does not need key,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-15,position,"You are shown a set of four cards placed on a table. 
+","If the door is locked, then you need a key to open it.",Door locked,Door open,Needs key,Does not need key,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+15,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -142,8 +142,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a person is drinking alcohol, then they must be over 18 years old.",Drinking alcohol,Drinking soda,Over 18,Under 18,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-16,position,"You are shown a set of four cards placed on a table. 
+","If a person is drinking alcohol, then they must be over 18 years old.",Drinking alcohol,Drinking soda,Over 18,Under 18,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+16,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -151,8 +151,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If someone is a bachelor, then they are unmarried.",Bachelor,Married man,Unmarried,Married,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-17,position,"You are shown a set of four cards placed on a table. 
+","If someone is a bachelor, then they are unmarried.",Bachelor,Married man,Unmarried,Married,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+17,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -160,8 +160,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If the plant gets sunlight, then it will grow.",Gets sunlight,No sunlight,Grows,Does not grow,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-18,position,"You are shown a set of four cards placed on a table. 
+","If the plant gets sunlight, then it will grow.",Gets sunlight,No sunlight,Grows,Does not grow,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+18,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -169,8 +169,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If the car has fuel, then it can run.",Has fuel,No fuel,Can run,Cannot run,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,-0.6238643215107611,-inf,-inf,13.047920699689845,-inf,-inf,-inf,-inf,-inf,-inf
-19,position,"You are shown a set of four cards placed on a table. 
+","If the car has fuel, then it can run.",Has fuel,No fuel,Can run,Cannot run,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+19,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -178,8 +178,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a shape is a square, then it has four sides.",Square,Triangle,Four sides,Three sides,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-20,position,"You are shown a set of four cards placed on a table. 
+","If a shape is a square, then it has four sides.",Square,Triangle,Four sides,Three sides,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+20,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -187,8 +187,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If it is raining, then the ground is wet.",Raining,Sunny,Ground wet,Ground dry,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-21,position,"You are shown a set of four cards placed on a table. 
+","If it is raining, then the ground is wet.",Raining,Sunny,Ground wet,Ground dry,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+21,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -196,8 +196,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If the temperature drops below zero, then water freezes.",Below zero,Above zero,Freezes,Does not freeze,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-22,position,"You are shown a set of four cards placed on a table. 
+","If the temperature drops below zero, then water freezes.",Below zero,Above zero,Freezes,Does not freeze,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+22,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -205,8 +205,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If someone is a teacher, then they work at a school.",Teacher,Doctor,Works at school,Does not work at school,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-23,position,"You are shown a set of four cards placed on a table. 
+","If someone is a teacher, then they work at a school.",Teacher,Doctor,Works at school,Does not work at school,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+23,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -214,8 +214,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If the machine is working, then the light is green.",Machine working,Machine off,Light green,Light red,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-24,position,"You are shown a set of four cards placed on a table. 
+","If the machine is working, then the light is green.",Machine working,Machine off,Light green,Light red,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+24,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -223,8 +223,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a computer is connected to Wi-Fi, then it can access the internet.",Connected to Wi-Fi,Not connected,Access internet,No internet,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-25,position,"You are shown a set of four cards placed on a table. 
+","If a computer is connected to Wi-Fi, then it can access the internet.",Connected to Wi-Fi,Not connected,Access internet,No internet,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+25,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -232,8 +232,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-26,position,"You are shown a set of four cards placed on a table. 
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+26,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -241,8 +241,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-27,position,"You are shown a set of four cards placed on a table. 
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+27,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -250,8 +250,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-28,position,"You are shown a set of four cards placed on a table. 
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+28,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -259,8 +259,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-29,position,"You are shown a set of four cards placed on a table. 
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+29,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -268,8 +268,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-30,position,"You are shown a set of four cards placed on a table. 
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+30,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -277,8 +277,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,-0.6856488853544618,-inf,-inf,13.114808432725958,-inf,-inf,-inf,-inf,-inf,-inf
-31,position,"You are shown a set of four cards placed on a table. 
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+31,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -286,8 +286,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-32,position,"You are shown a set of four cards placed on a table. 
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+32,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -295,8 +295,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-33,position,"You are shown a set of four cards placed on a table. 
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+33,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -304,8 +304,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-34,position,"You are shown a set of four cards placed on a table. 
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+34,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -313,8 +313,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,-0.6892138948219751,-inf,-inf,13.118414559818362,-inf,-inf,-inf,-inf,-inf,-inf
-35,position,"You are shown a set of four cards placed on a table. 
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+35,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -322,8 +322,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-36,position,"You are shown a set of four cards placed on a table. 
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+36,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -331,8 +331,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-37,position,"You are shown a set of four cards placed on a table. 
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+37,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -340,8 +340,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-38,position,"You are shown a set of four cards placed on a table. 
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+38,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -349,8 +349,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-39,position,"You are shown a set of four cards placed on a table. 
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+39,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -358,8 +358,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-40,position,"You are shown a set of four cards placed on a table. 
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+40,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -367,8 +367,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,-0.6856488853544618,-inf,-inf,13.114808432725958,-inf,-inf,-inf,-inf,-inf,-inf
-41,position,"You are shown a set of four cards placed on a table. 
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+41,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -376,8 +376,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-42,position,"You are shown a set of four cards placed on a table. 
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+42,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -385,8 +385,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-43,position,"You are shown a set of four cards placed on a table. 
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+43,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -394,8 +394,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-44,position,"You are shown a set of four cards placed on a table. 
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+44,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -403,8 +403,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,-0.6892138948219751,-inf,-inf,13.118414559818362,-inf,-inf,-inf,-inf,-inf,-inf
-45,position,"You are shown a set of four cards placed on a table. 
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+45,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -412,8 +412,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-46,position,"You are shown a set of four cards placed on a table. 
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+46,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -421,8 +421,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-47,position,"You are shown a set of four cards placed on a table. 
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+47,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -430,8 +430,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-48,position,"You are shown a set of four cards placed on a table. 
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+48,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -439,8 +439,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-49,position,"You are shown a set of four cards placed on a table. 
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+49,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -448,8 +448,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-50,position,"You are shown a set of four cards placed on a table. 
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+50,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -457,8 +457,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,-0.6856488853544618,-inf,-inf,13.114808432725958,-inf,-inf,-inf,-inf,-inf,-inf
-51,position,"You are shown a set of four cards placed on a table. 
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+51,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -466,8 +466,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-52,position,"You are shown a set of four cards placed on a table. 
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+52,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -475,8 +475,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-53,position,"You are shown a set of four cards placed on a table. 
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+53,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -484,8 +484,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-54,position,"You are shown a set of four cards placed on a table. 
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+54,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -493,8 +493,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,-0.6892138948219751,-inf,-inf,13.118414559818362,-inf,-inf,-inf,-inf,-inf,-inf
-55,position,"You are shown a set of four cards placed on a table. 
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+55,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -502,8 +502,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-56,position,"You are shown a set of four cards placed on a table. 
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+56,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -511,8 +511,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-57,position,"You are shown a set of four cards placed on a table. 
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+57,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -520,8 +520,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-58,position,"You are shown a set of four cards placed on a table. 
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+58,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -529,8 +529,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-59,position,"You are shown a set of four cards placed on a table. 
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+59,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -538,8 +538,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-60,position,"You are shown a set of four cards placed on a table. 
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+60,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -547,8 +547,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,-0.6856488853544618,-inf,-inf,13.114808432725958,-inf,-inf,-inf,-inf,-inf,-inf
-61,position,"You are shown a set of four cards placed on a table. 
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+61,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -556,8 +556,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-62,position,"You are shown a set of four cards placed on a table. 
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+62,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -565,8 +565,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-63,position,"You are shown a set of four cards placed on a table. 
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+63,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -574,8 +574,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-64,position,"You are shown a set of four cards placed on a table. 
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+64,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -583,8 +583,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,-0.6892138948219751,-inf,-inf,13.118414559818362,-inf,-inf,-inf,-inf,-inf,-inf
-65,position,"You are shown a set of four cards placed on a table. 
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+65,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -592,8 +592,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-66,position,"You are shown a set of four cards placed on a table. 
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+66,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -601,8 +601,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-67,position,"You are shown a set of four cards placed on a table. 
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+67,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -610,8 +610,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-68,position,"You are shown a set of four cards placed on a table. 
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+68,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -619,8 +619,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-69,position,"You are shown a set of four cards placed on a table. 
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+69,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -628,8 +628,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-70,position,"You are shown a set of four cards placed on a table. 
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+70,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -637,8 +637,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,-0.6856488853544618,-inf,-inf,13.114808432725958,-inf,-inf,-inf,-inf,-inf,-inf
-71,position,"You are shown a set of four cards placed on a table. 
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+71,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -646,8 +646,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-72,position,"You are shown a set of four cards placed on a table. 
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+72,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -655,8 +655,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-73,position,"You are shown a set of four cards placed on a table. 
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+73,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -664,8 +664,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-74,position,"You are shown a set of four cards placed on a table. 
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+74,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -673,8 +673,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,-0.6892138948219751,-inf,-inf,13.118414559818362,-inf,-inf,-inf,-inf,-inf,-inf
-75,position,"You are shown a set of four cards placed on a table. 
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+75,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -682,8 +682,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-76,position,"You are shown a set of four cards placed on a table. 
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+76,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -691,8 +691,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-77,position,"You are shown a set of four cards placed on a table. 
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+77,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -700,8 +700,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-78,position,"You are shown a set of four cards placed on a table. 
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+78,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -709,8 +709,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-79,position,"You are shown a set of four cards placed on a table. 
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+79,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -718,8 +718,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-80,position,"You are shown a set of four cards placed on a table. 
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+80,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -727,8 +727,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,-0.6856488853544618,-inf,-inf,13.114808432725958,-inf,-inf,-inf,-inf,-inf,-inf
-81,position,"You are shown a set of four cards placed on a table. 
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+81,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -736,8 +736,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-82,position,"You are shown a set of four cards placed on a table. 
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+82,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -745,8 +745,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-83,position,"You are shown a set of four cards placed on a table. 
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+83,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -754,8 +754,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-84,position,"You are shown a set of four cards placed on a table. 
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+84,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -763,8 +763,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,-0.6892138948219751,-inf,-inf,13.118414559818362,-inf,-inf,-inf,-inf,-inf,-inf
-85,position,"You are shown a set of four cards placed on a table. 
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+85,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -772,8 +772,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-86,position,"You are shown a set of four cards placed on a table. 
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+86,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -781,8 +781,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-87,position,"You are shown a set of four cards placed on a table. 
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+87,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -790,8 +790,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-88,position,"You are shown a set of four cards placed on a table. 
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+88,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -799,8 +799,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-89,position,"You are shown a set of four cards placed on a table. 
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+89,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -808,8 +808,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-90,position,"You are shown a set of four cards placed on a table. 
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+90,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -817,8 +817,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,-0.6856488853544618,-inf,-inf,13.114808432725958,-inf,-inf,-inf,-inf,-inf,-inf
-91,position,"You are shown a set of four cards placed on a table. 
+","If a device is charged, then it can turn on.",Charged device,Uncharged device,Turns on,Does not turn on,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+91,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -826,8 +826,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-92,position,"You are shown a set of four cards placed on a table. 
+","If a person is a teenager, then they are under 20.",Teenager,Adult,Under 20,20 or older,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+92,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -835,8 +835,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-93,position,"You are shown a set of four cards placed on a table. 
+","If a book is a dictionary, then it lists words alphabetically.",Dictionary,Novel,Alphabetical listing,Not alphabetical,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+93,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -844,8 +844,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-94,position,"You are shown a set of four cards placed on a table. 
+","If a food is dairy, then it comes from milk.",Dairy food,Non-dairy food,From milk,Not from milk,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+94,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -853,8 +853,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,-0.6892138948219751,-inf,-inf,13.118414559818362,-inf,-inf,-inf,-inf,-inf,-inf
-95,position,"You are shown a set of four cards placed on a table. 
+","If a country is in the EU, then it uses the euro.",EU country,Non-EU country,Uses euro,Does not use euro,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+95,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -862,8 +862,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-96,position,"You are shown a set of four cards placed on a table. 
+","If a vehicle is a car, then it has four wheels.",Car,Bicycle,Four wheels,Not four wheels,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+96,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -871,8 +871,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-97,position,"You are shown a set of four cards placed on a table. 
+","If a drink is alcoholic, then it contains ethanol.",Alcoholic drink,Soft drink,Contains ethanol,No ethanol,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+97,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -880,8 +880,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-98,position,"You are shown a set of four cards placed on a table. 
+","If a student passed the exam, then they studied.",Passed exam,Failed exam,Studied,Did not study,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+98,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -889,8 +889,8 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
-99,position,"You are shown a set of four cards placed on a table. 
+","If a fruit is an apple, then it has seeds.",Apple,Banana,Has seeds,No seeds,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
+99,control,"You are shown a set of four cards placed on a table. 
 The visible faces of the cards show A, B, C, D, given below.
 Which card(s) must you turn over in order to test that if the rule, given below, is correct.
 Your task is to identify only the items that must be examined to determine
@@ -898,4 +898,4 @@ whether the rule is true or false.Your options are: AB, AC, AD,
 BC, BD, CD. 
 Give me only the option(s) you think is 
 correct, nothing else.
-","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['not P', 'Q', 'P', 'not Q']",-inf,-inf,-inf,-inf,-inf,0.0,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf,-inf
+","If a building is a hospital, then it has emergency services.",Hospital,Office building,Emergency services,No emergency services,"['P', 'not Q', 'not P', 'Q']",NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN
