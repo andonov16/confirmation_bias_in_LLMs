@@ -3,14 +3,12 @@ experiment_type: "position"
 console_log_message: 'Conducting Position Wason Selection Task Study'
 
 llm_task: |
-    You are shown a set of four cards placed on a table. 
-    The visible faces of the cards show A, B, C, D, given below.
-    Which card(s) must you turn over in order to test that if the rule, given below, is correct.
-    Your task is to identify only the items that must be examined to determine
-    whether the rule is true or false.Your options are: AB, AC, AD,
-    BC, BD, CD. 
-    Give me only the option(s) you think is 
-    correct, nothing else.
+  You are given a conditional rule and a set of items.
+  Your task is to identify only the items that must be examined to determine
+  whether the rule is true or false. Your options are:AB, AC, AD, BC, BD, CD
+  please consider all of them when giving me your response.
+  Please, when returning tokens, limit yourself to only the options I defined you above and give me only the option you think is 
+  correct, nothing else.
 
 cards_ordering:
   - "not P"
